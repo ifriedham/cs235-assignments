@@ -25,7 +25,7 @@ int main(int argc, char const *argv[])
             //break;
         }
 
-        else if (operation == "add" || operation == "minus" || operation == "multiply" || operation == "divide" || operation == "mod")
+        else if (operation == "add" || operation == "subtract" || operation == "multiply" || operation == "divide" || operation == "mod")
         {
             std::cout << "left operand: ";
             std::string leftStr = input("");
@@ -41,7 +41,7 @@ int main(int argc, char const *argv[])
                 std::cout << left + right << std::endl;
             }
 
-            else if (operation == "minus")
+            else if (operation == "subtract")
             {
                 std::cout << left - right << std::endl;
             }
