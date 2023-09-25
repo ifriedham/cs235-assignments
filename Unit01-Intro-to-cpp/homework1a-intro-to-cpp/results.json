@@ -1,115 +1,115 @@
 {
     "tests": [
         {
-            "score": 0.0,
+            "score": 1.666,
             "max_score": 1.666,
             "name": "test_calculator.py::test_add[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'operation: add\\nleft operand: 1\\nright operand: 2\\n3\\noperation: add\\nleft operand: 5\\nright operand: -7\\n-2\\noperation: \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'operation: add\\nleft operand: 1\\nright operand: 2\\n3\\noperation: add\\nleft operand: 5\\nright operand: -7\\n-2\\noperation: \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\n",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 1.666,
+            "max_score": 1.666,
+            "name": "test_calculator.py::test_multiply[everything-else]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.666,
+            "max_score": 1.666,
+            "name": "test_calculator.py::test_divide[everything-else]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.666,
+            "max_score": 1.666,
+            "name": "test_calculator.py::test_mod[everything-else]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.666,
             "max_score": 3.332,
             "name": "test_calculator.py::test_add[answer-1]",
-            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 2.2213,
             "max_score": 3.332,
             "name": "test_calculator.py::test_add[answer-2]",
-            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '-2'\nE             - -2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '-2\\r' == '-2'\nE             - -2\nE             + -2\r\nE             ?   +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 0.6924,
             "max_score": 1.666,
             "name": "test_calculator.py::test_subtract[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'operation: subtract\\nleft operand: 9\\nright operand: 5\\n4\\noperation: subtract\\nleft operand: 13\\nright operand: 25\\n-12\\noperation: \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'operation: subtract\\nleft operand: 9\\nright operand: 5\\n4\\noperation: subtract\\nleft operand: 13\\nright operand: 25\\n-12\\noperation: \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert Observed (left) == Expected (right)\nE             operation: subtract              | operation: subtract\nE             subtract isn't a valid operation | left operand: 9    \nE             operation: 9                     | right operand: 5   \nE             9 isn't a valid operation        | 4                  \nE             operation: 5                     | operation: subtract\nE             5 isn't a valid operation        | left operand: 13   \nE             operation: subtract              | right operand: 25  \nE             subtract isn't a valid operation | -12                \nE             operation: 13                    | operation:         \nE             13 isn't a valid operation       |                    \nE             operation: 25                    |                    \nE             25 isn't a valid operation       |                    \nE             operation:                       |\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
             "score": 0.0,
             "max_score": 3.332,
             "name": "test_calculator.py::test_subtract[answer-1]",
-            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '4'\nE             - 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \"5 isn't a valid operation\\r\" == '4'\nE             - 4\nE             + 5 isn't a valid operation\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
             "score": 0.0,
             "max_score": 3.332,
             "name": "test_calculator.py::test_subtract[answer-2]",
-            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '-12'\nE             - -12\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \"25 isn't a valid operation\\r\" == '-12'\nE             - -12\nE             + 25 isn't a valid operation\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
-            "max_score": 1.666,
-            "name": "test_calculator.py::test_multiply[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'operation: multiply\\nleft operand: 5\\nright operand: 2\\n10\\noperation: multiply\\nleft operand: 9\\nright operand: -3\\n-27\\noperation: \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'operation: multiply\\nleft operand: 5\\nright operand: 2\\n10\\noperation: multiply\\nleft operand: 9\\nright operand: -3\\n-27\\noperation: \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
-            "visibility": "visible"
-        },
-        {
-            "score": 0.0,
+            "score": 2.2213,
             "max_score": 3.332,
             "name": "test_calculator.py::test_multiply[answer-1]",
-            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '10'\nE             - 10\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '10\\r' == '10'\nE             - 10\nE             + 10\r\nE             ?   +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 2.499,
             "max_score": 3.332,
             "name": "test_calculator.py::test_multiply[answer-2]",
-            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '-27'\nE             - -27\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '-27\\r' == '-27'\nE             - -27\nE             + -27\r\nE             ?    +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
-            "max_score": 1.666,
-            "name": "test_calculator.py::test_divide[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'operation: divide\\nleft operand: 21\\nright operand: 7\\n3\\noperation: divide\\nleft operand: 54\\nright operand: -6\\n-9\\noperation: \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'operation: divide\\nleft operand: 21\\nright operand: 7\\n3\\noperation: divide\\nleft operand: 54\\nright operand: -6\\n-9\\noperation: \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
-            "visibility": "visible"
-        },
-        {
-            "score": 0.0,
+            "score": 1.666,
             "max_score": 3.332,
             "name": "test_calculator.py::test_divide[answer-1]",
-            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 2.2213,
             "max_score": 3.332,
             "name": "test_calculator.py::test_divide[answer-2]",
-            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '-9'\nE             - -9\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '-9\\r' == '-9'\nE             - -9\nE             + -9\r\nE             ?   +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
-            "max_score": 1.666,
-            "name": "test_calculator.py::test_mod[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'operation: mod\\nleft operand: 7\\nright operand: 4\\n3\\noperation: mod\\nleft operand: 100\\nright operand: 13\\n9\\noperation: \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'operation: mod\\nleft operand: 7\\nright operand: 4\\n3\\noperation: mod\\nleft operand: 100\\nright operand: 13\\n9\\noperation: \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
-            "visibility": "visible"
-        },
-        {
-            "score": 0.0,
+            "score": 1.666,
             "max_score": 3.332,
             "name": "test_calculator.py::test_mod[answer-1]",
-            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 1.666,
             "max_score": 3.332,
             "name": "test_calculator.py::test_mod[answer-2]",
-            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '9'\nE             - 9\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'answer-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '9\\r' == '9'\nE             - 9\nE             + 9\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 8.206,
             "max_score": 8.35,
             "name": "test_calculator.py::test_invalid_operation[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert '                                                                                ' == \"operation: asdf\\nasdf isn't a valid operation\\noperation: \\n                       \"\nE             Strings contain only whitespace, escaping them using repr()\nE             - \"operation: asdf\\nasdf isn't a valid operation\\noperation: \\n                       \"\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert Observed (left) == Expected (right)\nE             operation: asdf              | operation: asdf             \nE             asdf isn't a valid operation | asdf isn't a valid operation\nE             operation:                   | operation:                  \nE                                          |\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
