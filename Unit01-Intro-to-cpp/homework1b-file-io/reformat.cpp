@@ -6,13 +6,13 @@ using std::ifstream, std::ofstream;
 
 int main(int argc, char const *argv[])
 {
-
+    /*
     if (argc < 4) // checks for proper arguments in command line
     {
         cerr << "This program needs an input file, output file, points, and factor" << endl;
         exit(1);
     }
-
+    */
     ifstream infile(argv[1]); // open input.txt
     if (!infile.is_open())
     {
