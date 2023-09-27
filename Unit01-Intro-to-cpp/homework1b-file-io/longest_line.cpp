@@ -32,8 +32,8 @@ int main(int argc, char const *argv[])
     }
 
 
-    string input_file(argv[1]);
-    ifstream input(argv[1]);
+    string input_file = argv[1];
+    ifstream input(input_file);
 
     if (!input.is_open()) //checks successful file opening
     {
@@ -55,7 +55,7 @@ int main(int argc, char const *argv[])
         }
     }
 
-    cout << longestLine;
+    cout << longestLine << endl;
 
     input.close();
 

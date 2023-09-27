@@ -540,17 +540,17 @@
             "visibility": "visible"
         },
         {
-            "score": 0.0,
+            "score": 24.1071,
             "max_score": 25.0,
             "name": "test_longest_line.py::test_1[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == 'six words are on this line\\n                                                     '\nE             Strings contain only whitespace, escaping them using repr()\nE             - 'six words are on this line\\n                                                     '\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'six words are on this line\\r\\n                                                    ' == 'six words are on this line\\n                                                     '\nE             - six words are on this line\nE             + six words are on this line\r\nE             ?                           +\nE             -                                                      \nE             ?                                                     -\nE             +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         },
         {
-            "score": 24.569,
+            "score": 24.5763,
             "max_score": 25.0,
             "name": "test_longest_line.py::test_2[everything-else]",
-            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus                       ' == 'Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\\n                      '\nE             - Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\nE             ?                                                          ^\nE             + Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus                       \nE             ?                                                          ^^^^^^^^^^^^^^^^^^^^^^^\nE             -\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\\r\\n                     ' == 'Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\\n                      '\nE             - Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\nE             + Ethernet Windows LAN kernel GUI ML firewall SQL IDE virus\r\nE             ?                                                          +\nE             -                       \nE             ?                      -\nE             +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
             "visibility": "visible"
         }
     ]
