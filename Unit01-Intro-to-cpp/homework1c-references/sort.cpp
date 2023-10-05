@@ -3,6 +3,26 @@
 
 void sort(std::string& a, std::string& b, std::string& c) {
     // implement sort here
+    std::string temp;
+
+    if (a > b){
+        temp = a;
+        a = b;
+        b = temp;
+    }
+    
+    if (b > c){
+        temp = b;
+        b = c;
+        c = temp;
+    }
+
+   if (a > b){
+        temp = a;
+        a = b;
+        b = temp;
+    }
+
 }
 
 int main(int argc, char const* argv[]) {
