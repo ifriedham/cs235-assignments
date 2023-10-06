@@ -27,7 +27,7 @@ int main(int argc, char const* argv[]) {
     int n = 10;  // set default n
 
     if (argc > 2) {
-        n = atoi(argv[1]);  // if n is given, change from 10 to new number
+        n = abs(atoi(argv[1]));        // set n to + # of lines
         std::ifstream input(argv[2]);  // open file
 
         if (!input.is_open()) {  // check if input file exists
@@ -43,6 +43,7 @@ int main(int argc, char const* argv[]) {
         const std::string argument = argv[1];
         if (isNumber(
                 argument)) {  // checks if argument is # of lines or a filename
+            n = abs(atoi(argv[1]));   // set n to + # of lines
             printLines(n, std::cin);  // no file provided, printing from cin
         }
 
