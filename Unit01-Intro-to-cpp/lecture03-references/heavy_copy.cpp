@@ -42,7 +42,7 @@ int main(int argc, char** argv) {
     string text = get_file_contents(filename);
     cout << "Length of text is: " << text.size() << endl;
 
-    uint total_size(0);
+    unsigned int total_size(0);
 
     /* Version with string */
     cout << endl;
