@@ -1,12 +1,17 @@
 #pragma once
-
+#include <vector>
 template<class T>
 class VectorSet {
+private:
+    std::vector<T> myVec;
 public:
     bool contains(T item) const {
-        // implement contains here
-
-        // return true if item is in the set and false if not
+        for (int i = 0; i < myVec.size(); i++) { // implement contains here
+            if (myVec == item) {
+                return true;
+            }
+        }
+        return false;// return true if item is in the set and false if not
     }
 
     bool insert(T item) {
