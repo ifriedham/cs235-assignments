@@ -26,14 +26,22 @@ public:
             myVec.push_back(item);
             return true;
         }
-
         // return true if item is inserted and false if item is already in the
         // set
     }
 
     bool remove(T item) {
         // implement remove here
-
+        if (contains(item)) {
+            for (int i = 0; i < myVec.size(); i++) {
+                if (myVec == item) {
+                    myVec.erase(myVec.at(i));
+                }
+            }
+            return true;
+        } else {
+            return false;
+        }
         // return true if item is removed and false if item wasn't in the set
     }
 
