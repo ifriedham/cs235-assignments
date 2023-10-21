@@ -28,12 +28,20 @@ int main(int argc, char *argv[]) {
             // cout << token<<endl;
         }
     }
+
     cout << "Number of words " << tokens.size() << endl;
     cout << "Number of unique words " << unique.size() << endl;
+
+    ofstream vectorFile(fileName+"_vector.txt");
     ofstream setFile(fileName+"_set.txt");
+
+    for (vector<string>::iterator it = tokens.begin(); it != tokens.end(); ++it) {
+        vectorFile << ' ' << *it << std::endl;
+    }
+
     for (set<string>::iterator it = unique.begin(); it != unique.end(); ++it) {
         cout << ' ' << *it;
-        setFile << ' ' << *it;
+        setFile << ' ' << *it << std::endl;
     }
     cout << endl;
 }
