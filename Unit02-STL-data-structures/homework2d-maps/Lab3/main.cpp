@@ -3,6 +3,8 @@
 #include <set>
 #include <sstream>
 #include <fstream>
+#include <map>
+#include <list>
 
 
 using namespace std;
@@ -35,6 +37,7 @@ int main(int argc, char *argv[]) {
     ofstream vectorFile(fileName+"_vector.txt");
     ofstream setFile(fileName+"_set.txt");
 
+
     for (vector<string>::iterator it = tokens.begin(); it != tokens.end(); ++it) {
         vectorFile << ' ' << *it << std::endl;
     }
@@ -44,4 +47,21 @@ int main(int argc, char *argv[]) {
         setFile << ' ' << *it << std::endl;
     }
     cout << endl;
+
+
+    map<string, string> wordmap_1;
+    string last="";
+    for (vector<string>::iterator it=tokens.begin(); it!=tokens.end(); it++) {
+        wordmap_1[last]=*it;
+        last = *it;
+    }
+
+    ofstream mapFile(fileName+"_map.txt");
+
+    for (map<string,string>::iterator it=wordmap_1.begin(); it!=wordmap_1.end(); ++it) {
+        mapFile << it -> first << ", " << it -> second << endl;
+    }
+    cout << endl;
+
+    return 0;
 }
