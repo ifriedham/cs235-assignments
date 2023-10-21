@@ -33,6 +33,7 @@ int main(int argc, char *argv[]) {
 
     cout << "Number of words " << tokens.size() << endl;
     cout << "Number of unique words " << unique.size() << endl;
+    cout << endl;
 
     ofstream vectorFile(fileName+"_vector.txt");
     ofstream setFile(fileName+"_set.txt");
@@ -55,11 +56,34 @@ int main(int argc, char *argv[]) {
         wordmap_1[last]=*it;
         last = *it;
     }
-
+//part 3
     ofstream mapFile(fileName+"_map.txt");
 
     for (map<string,string>::iterator it=wordmap_1.begin(); it!=wordmap_1.end(); ++it) {
         mapFile << it -> first << ", " << it -> second << endl;
+    }
+//part 4
+    string state = "";
+    for(int i = 0; i < 100; i++){
+        cout << wordmap_1[state] << " ";
+        state = wordmap_1[state];
+    }
+    cout << endl;
+//part 5
+    map<string, vector<string>> wordmap_2;
+    state = "";
+    for(vector<string>::iterator it=tokens.begin(); it !=tokens.end(); it++) {
+        wordmap_2[state].push_back(*it);
+        state = *it;
+    }
+
+    srand(time(NULL)); // this line initializes the random number generated
+    // so you dont get the same thing every time
+    state = "";
+    for (int i = 0; i < 100; i++) {
+        int ind = rand() % wordmap_2[state].size();
+        cout << wordmap_2[state][ind] << " ";
+        state = wordmap_2[state][ind];
     }
     cout << endl;
 
