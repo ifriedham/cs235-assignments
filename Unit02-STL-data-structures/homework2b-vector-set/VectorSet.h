@@ -9,8 +9,8 @@ private:
 public:
     bool contains(T item) const {
         // implement contains here
-        for (int i = 0; i < myVec.size(); i++) {
-            if (myVec == item) {
+        for (const T& itemInVec : myVec) {
+            if (itemInVec == item) {
                 return true;
             }
         }
@@ -33,12 +33,13 @@ public:
     bool remove(T item) {
         // implement remove here
         if (contains(item)) {
-            for (int i = 0; i < myVec.size(); i++) {
-                if (myVec == item) {
-                    myVec.erase(myVec.at(i));
+            for (auto i = myVec.begin(); i != myVec.end(); i++) {
+                if (*i == item) {
+                    myVec.erase(i);
+                    return true;
                 }
             }
-            return true;
+
         } else {
             return false;
         }
@@ -47,19 +48,23 @@ public:
 
     int size() const {
         // implement size here
-
+        return myVec.size();
         // return the number of items in the set
     }
 
     bool empty() const {
         // implement empty here
-
+        if (myVec.empty()) {
+            return true;
+        } else {
+            return false;
+        }
         // return true if the set is empty and return false otherwise
     }
 
     void clear() {
         // implement clear here
-
+        myVec.clear();
         // remove all items from the set
     }
 };
