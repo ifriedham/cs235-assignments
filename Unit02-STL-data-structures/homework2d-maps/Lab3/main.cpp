@@ -14,6 +14,7 @@ int main(int argc, char *argv[]) {
     set <string> unique;
     string next_line;  // Each data line
     string fileName = argv[1];
+    //string fileName2 = argv[2];
     ifstream in(fileName); //opens file
     while (getline(in, next_line)) {
         istringstream iss(next_line);
@@ -86,6 +87,33 @@ int main(int argc, char *argv[]) {
         state = wordmap_2[state][ind];
     }
     cout << endl;
+
+    //part 6
+    map<list<string>, vector<string>> wordmap_3;
+    list<string> states;
+    int M = 2; // change the value of this variable to see how your output changes
+    for (int i = 0; i < M; i++) {
+        states.push_back("");
+    }
+
+    for (vector<string>::iterator it=tokens.begin(); it!=tokens.end(); it++) {
+        wordmap_3[states].push_back(*it);
+        states.push_back(*it);
+        states.pop_front();
+    }
+
+    states.clear();
+    for (int i = 0; i < M; i++) {
+        states.push_back("");
+    }
+    for (int i = 0; i < 100; i++) {
+        int ind = rand() % wordmap_3[states].size();
+        cout << wordmap_3[states][ind]<<" ";
+        states.push_back(wordmap_3[states][ind]);
+        states.pop_front();
+    }
+
+
 
     return 0;
 }
