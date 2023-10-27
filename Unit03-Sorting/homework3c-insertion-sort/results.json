@@ -1,0 +1,39 @@
+{
+    "tests": [
+        {
+            "score": 2.5,
+            "max_score": 2.5,
+            "name": "test_sort.py::test_4_stdin[everything-else]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 22.0238,
+            "max_score": 25.0,
+            "name": "test_sort.py::test_1_already_sorted[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             bicycle                                | bicycle                                    \nE             enigma                                 | enigma                                     \nE             ocean                                  | ocean                                      \nE             sparkle                                | sparkle                                    \nE             tornado                                | tornado                                    \nE                                                    |\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 22.5248,
+            "max_score": 25.0,
+            "name": "test_sort.py::test_2_reversed[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             banana      | banana     \nE             butterfly   | butterfly  \nE             marshmallow | marshmallow\nE             puzzle      | puzzle     \nE             radiant     | radiant    \nE             serenade    | serenade   \nE             serendipity | serendipity\nE             sunshine    | sunshine   \nE             symphony    | symphony   \nE             whisper     | whisper\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 22.3684,
+            "max_score": 25.0,
+            "name": "test_sort.py::test_3_shuffled[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             blossom      | blossom     \nE             bubble       | bubble      \nE             castle       | castle      \nE             cinnamon     | cinnamon    \nE             coffee       | coffee      \nE             elephant     | elephant    \nE             feather      | feather     \nE             firefly      | firefly     \nE             galaxy       | galaxy      \nE             guitar       | guitar      \nE             kaleidoscope | kaleidoscope\nE             moonlight    | moonlight   \nE             quicksilver  | quicksilver \nE             rainbow      | rainbow     \nE             saffron      | saffron     \nE             thunder      | thunder     \nE             tranquil     | tranquil    \nE             velvet       | velvet      \nE             waterfall    | waterfall   \nE             whisker      | whisker\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 20.0871,
+            "max_score": 22.5,
+            "name": "test_sort.py::test_4_stdin[sorted-lines]",
+            "output": "\ngroup_name = 'sorted-lines'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             amethyst    | amethyst   \nE             azure       | azure      \nE             bamboo      | bamboo     \nE             bubblegum   | bubblegum  \nE             caramel     | caramel    \nE             cascade     | cascade    \nE             celestial   | celestial  \nE             cookie      | cookie     \nE             coral       | coral      \nE             driftwood   | driftwood  \nE             echo        | echo       \nE             elixir      | elixir     \nE             enchanting  | enchanting \nE             flamingo    | flamingo   \nE             flutter     | flutter    \nE             glimmer     | glimmer    \nE             gossamer    | gossamer   \nE             harmonize   | harmonize  \nE             honeysuckle | honeysuckle\nE             ivory       | ivory      \nE             jazz        | jazz       \nE             meadow      | meadow     \nE             melody      | melody     \nE             midnight    | midnight   \nE             moonbeam    | moonbeam   \nE             mountain    | mountain   \nE             nimbus      | nimbus     \nE             opulent     | opulent    \nE             pebble      | pebble     \nE             petrichor   | petrichor  \nE             prism       | prism      \nE             quasar      | quasar     \nE             silhouette  | silhouette \nE             sizzle      | sizzle     \nE             stardust    | stardust   \nE             starlight   | starlight  \nE             tangerine   | tangerine  \nE             wanderer    | wanderer   \nE             wanderlust  | wanderlust \nE             whimsical   | whimsical\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}
