@@ -190,6 +190,8 @@ public:
         while (head) {
             Node *delNode = head;
             head = head->next;
+            delNode->next = nullptr; // Set next to nullptr
+            delNode->prev = nullptr; // Set prev to nullptr
             delete delNode;
         }
         listSize = 0;
