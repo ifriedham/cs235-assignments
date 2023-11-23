@@ -73,10 +73,14 @@ public:
         // implement pop_front here
         if (listSize > 0) {
             Node *ptr = head->next;
-            ptr->prev = nullptr;
+            if (ptr) {
+                ptr->prev = nullptr;
+            }
             delete head;
             head = ptr;
+            listSize--;
         } else {
+            throw std::length_error("List is empty");
         }
     }
 
@@ -84,9 +88,12 @@ public:
         // implement pop_back here
         if (listSize > 0) {
             Node *ptr = tail->prev;
-            ptr->next = nullptr;
+            if (ptr) {
+                ptr->next = nullptr;
+            }
             delete tail;
             tail = ptr;
+            listSize--;
         } else {
             throw std::length_error("List is empty");
         }
@@ -104,8 +111,13 @@ public:
             for (int i = 0; i < position; i++) {
                 ptr = ptr->next;
             }
-            ptr->prev->next = ptr->next;
-            ptr->next->prev = ptr->prev;
+
+            if (ptr->next) {
+                ptr->next->prev = ptr->prev;
+            }
+            if (ptr->prev) {
+                ptr->prev->next = ptr->next;
+            }
             listSize--;
             delete ptr;
         }
@@ -150,15 +162,22 @@ public:
     bool contains(const T &item) const {
         // implement contains here
         Node *ptr = head;
-        while (ptr->value != item) {
+        for (int i = 0; i < listSize; i++) {
+            if (ptr->value == item) {
+                return true;
+            }
             ptr = ptr->next;
         }
-        if (ptr->value == item){
-            return true;
-        }
-        else if (ptr->value != item) {
-            return false;
-        }
+        return false;
+//        while (ptr->value != item) {
+//            ptr = ptr->next;
+//        }
+//        if (ptr->value == item){
+//            return true;
+//        }
+//        else if (ptr->value != item) {
+//            return false;
+//        }
     }
 
     int size() const {
