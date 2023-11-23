@@ -10,6 +10,9 @@ public:
         Node(T v) : next(nullptr), value(v) {}
     };
 
+    Node *head;
+    size_t sllSize;
+
     SLList() : head(nullptr), sllSize(0) {
     }
 
@@ -26,19 +29,17 @@ public:
         // implement push_back here
         Node *newItem = new Node(item);
 
-
-
        if (head) {
            Node *nodePtr = head;
-           while (nodePtr != NULL) {
-               nodePtr = nodePtr->next; // move to the next node
+           while (nodePtr->next) { //takes us to the last node in list
+               nodePtr = nodePtr->next;
            }
            nodePtr->next = newItem;
-           sllSize++; // = sllSize + 1;
        }
        else { // no existing head
            head = newItem;
        }
+        sllSize++; // = sllSize + 1;
     }
 
     void pop_back() {
@@ -80,7 +81,4 @@ public:
         }
         sllSize = 0;
     }
-private:
-    Node *head;
-    int sllSize;
 };
