@@ -1,0 +1,333 @@
+{
+    "tests": [
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-5]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.9,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-6]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_4_partition_shuffled[array-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_4_partition_shuffled[array-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_4_partition_shuffled[array-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.6486,
+            "max_score": 0.7,
+            "name": "test_quicksort.py::test_1_medianOfThree[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output ---          | --- Test 1 output ---         \nE                                            |                               \nE             array = -3 4 4 8 -4 4 2 -6 6 5 | array = -3 4 4 8 -4 4 2 -6 6 5\nE                                            |                               \nE             medianOfThree(array, 0, 9) = 4 | medianOfThree(array, 0, 9) = 4\nE             array = -4 4 4 8 -3 4 2 -6 6 5 | array = -4 4 4 8 -3 4 2 -6 6 5\nE                                            |                               \nE             medianOfThree(array, 1, 6) = 3 | medianOfThree(array, 1, 6) = 3\nE             array = -4 2 4 4 -3 4 8 -6 6 5 | array = -4 2 4 4 -3 4 8 -6 6 5\nE                                            |                               \nE             medianOfThree(array, 2, 7) = 4 | medianOfThree(array, 2, 7) = 4\nE             array = -4 2 -6 4 -3 4 8 4 6 5 | array = -4 2 -6 4 -3 4 8 4 6 5\nE                                            |                               \nE             medianOfThree(array, 6, 8) = 7 | medianOfThree(array, 6, 8) = 7\nE             array = -4 2 -6 4 -3 4 4 6 8 5 | array = -4 2 -6 4 -3 4 4 6 8 5\nE                                            |                               \nE             medianOfThree(array, 7, 9) = 8 | medianOfThree(array, 7, 9) = 8\nE             array = -4 2 -6 4 -3 4 4 5 6 8 | array = -4 2 -6 4 -3 4 4 5 6 8\nE                                            |                               \nE             medianOfThree(array, 2, 4) = 3 | medianOfThree(array, 2, 4) = 3\nE             array = -4 2 -6 -3 4 4 4 5 6 8 | array = -4 2 -6 -3 4 4 4 5 6 8\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-1]",
+            "output": "\ngroup_name = 'mot-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '4\\r' == '4'\nE             - 4\nE             + 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-2]",
+            "output": "\ngroup_name = 'mot-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-3]",
+            "output": "\ngroup_name = 'mot-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '4\\r' == '4'\nE             - 4\nE             + 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-4]",
+            "output": "\ngroup_name = 'mot-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '7\\r' == '7'\nE             - 7\nE             + 7\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-5]",
+            "output": "\ngroup_name = 'mot-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '8\\r' == '8'\nE             - 8\nE             + 8\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.25,
+            "max_score": 0.5,
+            "name": "test_quicksort.py::test_1_medianOfThree[mot-6]",
+            "output": "\ngroup_name = 'mot-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.8609,
+            "max_score": 0.9,
+            "name": "test_quicksort.py::test_1_medianOfThree[array-7]",
+            "output": "\ngroup_name = 'array-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '-4 2 -6 -3 4 4 4 5 6 8\\r' == '-4 2 -6 -3 4 4 4 5 6 8'\nE             - -4 2 -6 -3 4 4 4 5 6 8\nE             + -4 2 -6 -3 4 4 4 5 6 8\r\nE             ?                       +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 2 output ---\\n\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 0, 4) = 2\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 3, 9) = 6\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 0, 9) = 4\\narray = 1 2 3 4 5 9 13 16 16 17\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 2 output ---\\n\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 0, 4) = 2\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 3, 9) = 6\\narray = 1 2 3 4 5 9 13 16 16 17\\n\\npartition(array, 0, 9) = 4\\narray = 1 2 3 4 5 9 13 16 16 17\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[array-1]",
+            "output": "\ngroup_name = 'array-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 2 3 4 5 9 13 16 16 17'\nE             - 1 2 3 4 5 9 13 16 16 17\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[par-1]",
+            "output": "\ngroup_name = 'par-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '2'\nE             - 2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[array-2]",
+            "output": "\ngroup_name = 'array-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 2 3 4 5 9 13 16 16 17'\nE             - 1 2 3 4 5 9 13 16 16 17\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[par-2]",
+            "output": "\ngroup_name = 'par-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6'\nE             - 6\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[array-3]",
+            "output": "\ngroup_name = 'array-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 2 3 4 5 9 13 16 16 17'\nE             - 1 2 3 4 5 9 13 16 16 17\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[par-3]",
+            "output": "\ngroup_name = 'par-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '4'\nE             - 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_2_partition_already_sorted[array-4]",
+            "output": "\ngroup_name = 'array-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 2 3 4 5 9 13 16 16 17'\nE             - 1 2 3 4 5 9 13 16 16 17\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_3_partition_reversed[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 3 output ---\\n\\narray = velvet pillow pillow ocean mountain coffee cascade bubble blossom bicycle\\n\\npartition(array, 0, 4) = 3\\narray = ocean pillow mountain pillow velvet coffee cascade bubble blossom bicycle\\n\\npartition(array, 3, 9) = 6\\narray = ocean pillow mountain bicycle blossom bubble cascade coffee velvet pillow\\n\\npartition(array, 0, 9) = 6\\narray = cascade coffee mountain bicycle blossom bubble ocean pillow velvet pillow\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 3 output ---\\n\\narray = velvet pillow pillow ocean mountain coffee cascade bubble blossom bicycle\\n\\npartition(array, 0, 4) = 3\\narray = ocean pillow mountain pillow velvet coffee cascade bubble blossom bicycle\\n\\npartition(array, 3, 9) = 6\\narray = ocean pillow mountain bicycle blossom bubble cascade coffee velvet pillow\\n\\npartition(array, 0, 9) = 6\\narray = cascade coffee mountain bicycle blossom bubble ocean pillow velvet pillow\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_3_partition_reversed[array-1]",
+            "output": "\ngroup_name = 'array-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'velvet pillow pillow ocean mountain coffee cascade bubble blossom bicycle'\nE             - velvet pillow pillow ocean mountain coffee cascade bubble blossom bicycle\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_3_partition_reversed[par-1]",
+            "output": "\ngroup_name = 'par-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_3_partition_reversed[array-2]",
+            "output": "\ngroup_name = 'array-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'ocean pillow mountain pillow velvet coffee cascade bubble blossom bicycle'\nE             - ocean pillow mountain pillow velvet coffee cascade bubble blossom bicycle\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_3_partition_reversed[par-2]",
+            "output": "\ngroup_name = 'par-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6'\nE             - 6\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_3_partition_reversed[array-3]",
+            "output": "\ngroup_name = 'array-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'ocean pillow mountain bicycle blossom bubble cascade coffee velvet pillow'\nE             - ocean pillow mountain bicycle blossom bubble cascade coffee velvet pillow\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_3_partition_reversed[par-3]",
+            "output": "\ngroup_name = 'par-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6'\nE             - 6\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_3_partition_reversed[array-4]",
+            "output": "\ngroup_name = 'array-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'cascade coffee mountain bicycle blossom bubble ocean pillow velvet pillow'\nE             - cascade coffee mountain bicycle blossom bubble ocean pillow velvet pillow\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.3784,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_4_partition_shuffled[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 4 output ---            | --- Test 4 output ---           \nE                                              |                                 \nE             array = 6 14 19 5 7 1 18 16 8 16 | array = 6 14 19 5 7 1 18 16 8 16\nE                                              |                                 \nE             partition(array, 0, 4) = 2       | partition(array, 0, 4) = 2      \nE             array = 6 5 7 14 19 1 18 16 8 16 | array = 6 5 7 14 19 1 18 16 8 16\nE                                              |                                 \nE             partition(array, 3, 9) = 7       | partition(array, 3, 9) = 7      \nE             array = 6 5 7 16 8 1 14 16 19 18 | array = 6 5 7 16 8 1 14 16 19 18\nE                                              |                                 \nE             partition(array, 0, 9) = 4       | partition(array, 0, 9) = 4      \nE             array = 6 5 7 1 8 16 14 16 19 18 | array = 6 5 7 1 8 16 14 16 19 18\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.75,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_4_partition_shuffled[par-1]",
+            "output": "\ngroup_name = 'par-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '2\\r' == '2'\nE             - 2\nE             + 2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.75,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_4_partition_shuffled[par-2]",
+            "output": "\ngroup_name = 'par-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '7\\r' == '7'\nE             - 7\nE             + 7\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.75,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_4_partition_shuffled[par-3]",
+            "output": "\ngroup_name = 'par-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '4\\r' == '4'\nE             - 4\nE             + 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.16,
+            "max_score": 2.25,
+            "name": "test_quicksort.py::test_4_partition_shuffled[array-4]",
+            "output": "\ngroup_name = 'array-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '6 5 7 1 8 16 14 16 19 18\\r' == '6 5 7 1 8 16 14 16 19 18'\nE             - 6 5 7 1 8 16 14 16 19 18\nE             + 6 5 7 1 8 16 14 16 19 18\r\nE             ?                         +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_5_sort_already_sorted[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 5 output ---\\n\\narray = 1 7 8 9 11 11 15 16 18 20\\nSorting array...\\narray = 1 7 8 9 11 11 15 16 18 20\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 5 output ---\\n\\narray = 1 7 8 9 11 11 15 16 18 20\\nSorting array...\\narray = 1 7 8 9 11 11 15 16 18 20\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_5_sort_already_sorted[arr-before]",
+            "output": "\ngroup_name = 'arr-before'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 7 8 9 11 11 15 16 18 20'\nE             - 1 7 8 9 11 11 15 16 18 20\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_5_sort_already_sorted[arr-after]",
+            "output": "\ngroup_name = 'arr-after'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1 7 8 9 11 11 15 16 18 20'\nE             - 1 7 8 9 11 11 15 16 18 20\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.4016,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_6_sort_reversed[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 6 output ---         | --- Test 6 output ---        \nE                                           |                              \nE             array = 20 14 8 8 6 5 5 5 4 4 | array = 20 14 8 8 6 5 5 5 4 4\nE             Sorting array...              | Sorting array...             \nE             array = 4 4 5 5 5 6 8 8 20 14 | array = 4 4 5 5 5 6 8 8 14 20\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.4432,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_6_sort_reversed[arr-before]",
+            "output": "\ngroup_name = 'arr-before'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '20 14 8 8 6 5 5 5 4 4\\r' == '20 14 8 8 6 5 5 5 4 4'\nE             - 20 14 8 8 6 5 5 5 4 4\nE             + 20 14 8 8 6 5 5 5 4 4\r\nE             ?                      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.2159,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_6_sort_reversed[arr-after]",
+            "output": "\ngroup_name = 'arr-after'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '4 4 5 5 5 6 8 8 20 14\\r' == '4 4 5 5 5 6 8 8 14 20'\nE             - 4 4 5 5 5 6 8 8 14 20\nE             ?                   ^^^\nE             + 4 4 5 5 5 6 8 8 20 14\r\nE             ?                +++   ^\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.4016,
+            "max_score": 1.5,
+            "name": "test_quicksort.py::test_7_sort_shuffled[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 7 output ---                                                                        | --- Test 7 output ---                                                                       \nE                                                                                                          |                                                                                             \nE             array = whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow | array = whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow\nE             Sorting array...                                                                             | Sorting array...                                                                            \nE             array = aurora bicycle coffee cascade coffee firefly marshmallow kaleidoscope pillow whisper | array = aurora bicycle cascade coffee coffee firefly kaleidoscope marshmallow pillow whisper\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.6706,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_7_sort_shuffled[arr-before]",
+            "output": "\ngroup_name = 'arr-before'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow\\r' == 'whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow'\nE             - whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow\nE             + whisper coffee kaleidoscope coffee firefly marshmallow cascade bicycle aurora pillow\r\nE             ?                                                                                     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.1753,
+            "max_score": 6.75,
+            "name": "test_quicksort.py::test_7_sort_shuffled[arr-after]",
+            "output": "\ngroup_name = 'arr-after'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'aurora bicycle coffee cascade coffee firefly marshmallow kaleidoscope pillow whisper\\r' == 'aurora bicycle cascade coffee coffee firefly kaleidoscope marshmallow pillow whisper'\nE             - aurora bicycle cascade coffee coffee firefly kaleidoscope marshmallow pillow whisper\nE             ?                              -------                      ------------\nE             + aurora bicycle coffee cascade coffee firefly marshmallow kaleidoscope pillow whisper\r\nE             ?                +++++++                      ++++++++++++                            +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}
