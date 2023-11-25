@@ -9,9 +9,9 @@ template<class T>
 class Vector {
 public:
     class Iterator {
-        T* current;
-
     public:
+        explicit Iterator(T* ptr) : current(ptr) {}
+
         T& operator*() {
             // implement operator* here
             return *current;
@@ -33,6 +33,9 @@ public:
             //return !(*this == other);
             return current != other.current;
         }
+
+    private:
+        T* current;
     };
 
     Iterator begin() {
