@@ -10,7 +10,7 @@ class Vector {
 public:
     class Iterator {
     public:
-        explicit Iterator(T* ptr) : current(ptr) {}
+        explicit Iterator(T* ptr) : current(ptr) {} // 'explicit' added by clion clang:tidy
 
         T& operator*() {
             // implement operator* here
