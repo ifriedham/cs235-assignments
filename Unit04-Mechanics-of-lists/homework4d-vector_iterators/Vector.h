@@ -19,14 +19,19 @@ public:
 
         Iterator& operator++() {
             // implement operator++ here
+            current++;
+            return *this;
         }
 
         bool operator==(const Iterator& other) const {
             // implement operator== here
+            return current == other.current;
         }
 
         bool operator!=(const Iterator& other) const {
             // implement operator!= here
+            //return !(*this == other);
+            return current != other.current;
         }
     };
 
