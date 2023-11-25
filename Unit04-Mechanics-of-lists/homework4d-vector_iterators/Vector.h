@@ -14,7 +14,7 @@ public:
     public:
         T& operator*() {
             // implement operator* here
-
+            return *current;
         }
 
         Iterator& operator++() {
@@ -32,10 +32,12 @@ public:
 
     Iterator begin() {
         // implement begin here
+        return Iterator(data);
     }
 
     Iterator end() {
         // implement end here
+        return Iterator(data + vSize);
     }
 
     // paste in your methods from the vector assignment
