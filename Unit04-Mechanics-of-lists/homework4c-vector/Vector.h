@@ -58,6 +58,15 @@ public:
 
     void remove(int position) {
         // implement remove here
+        if (position < 0 || position >= vSize) {
+            throw std::out_of_range("remove index is out of bounds");
+        }
+
+        for (int i = position; i < vSize - 1; i++) {  // shifts all index's after position (like prof.'s popback())
+            data[i] = data[i + 1];
+        }
+
+        --vSize;
     }
 
     T& operator[](int index) {
@@ -75,6 +84,10 @@ public:
 
     void clear() {
         // implement clear here
+        delete [] data;
+        data = new T[INITIAL_CAPACITY];
+        capacity = INITIAL_CAPACITY;
+        vSize = 0;
     }
 
 private:
