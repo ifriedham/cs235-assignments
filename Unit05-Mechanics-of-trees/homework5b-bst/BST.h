@@ -33,6 +33,7 @@ public:
     bool remove(T item) {
         // implement remove here
         // return true if item was removed, false if item wasn't in the tree
+        remove(root, item);
     }
 
     bool contains(T item) const {
@@ -68,54 +69,54 @@ private:
         delete node;
     }
 
-    bool find(Node *&node, T item) const {
+    bool find(const Node *&node, T item) const {
         if (node == nullptr) return false;
         if (node->value == item) {
             return true;
-        } else if (item < root->value) { //check left
-            return find(root->left, item);
+        } else if (item < node->value) { //check left
+            return find(node->left, item);
         } else { // check right
-            return find(root->right, item);
+            return find(node->right, item);
         }
     }
 
-    bool add(Node *&node, T item){
+    bool add(Node *&node, T item) {
         if (node == nullptr) {
             node = new Node(item);
             nodeCount++;
             return true;
         }
 
-        if (node->value == item){
+        if (node->value == item) {
             return false;
         }
 
-        if (item < node->value){
+        if (item < node->value) {
             return add(node->left, item);
         } else {
             return add(node->right, item);
         }
     }
 
-    bool remove(Node *& node, T item){
-        if (node == nullptr){
+    bool remove(Node *&node, T item) {
+        if (node == nullptr) {
             return false;
         }
 
-        if (item < node->value){
+        if (item < node->value) {
             return remove(node->left, item);
-        } else if (item > node->value){
+        } else if (item > node->value) {
             return remove(node->right, item);
         } else { // node with value 'item' found
-            if (node->right == nullptr && node->right == nullptr){ // node is leaf
+            if (node->right == nullptr && node->right == nullptr) { // node is leaf
                 delete node;
                 node = nullptr;
-            } else if (node->left == nullptr){ // node has right child
+            } else if (node->left == nullptr) { // node has right child
                 node = node->right;
-            } else if (node->right == nullptr){ // node has left child
+            } else if (node->right == nullptr) { // node has left child
                 node = node->left;
             } else { //node has 2 children
-                Node* iop = getIOP(node);
+                Node *iop = getIOP(node);
                 node->value = iop->value;
                 remove(node->left, iop->value);
             }
@@ -124,8 +125,8 @@ private:
         }
     }
 
-    Node* getIOP(Node* const& node) { // finds Inorder Predecessor
-        Node* iop = node->left;
+    Node *getIOP(Node *const &node) { // finds Inorder Predecessor
+        Node *iop = node->left;
         while (iop->right != nullptr) {
             iop = iop->right;
         }
