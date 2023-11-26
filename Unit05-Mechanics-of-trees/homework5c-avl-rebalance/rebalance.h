@@ -1,8 +1,8 @@
 #pragma once
 
 struct Node {
-    Node* left;
-    Node* right;
+    Node *left;
+    Node *right;
     int value;
     int height;
 
@@ -11,13 +11,20 @@ struct Node {
 
 // Hint: you might find it helpful to write an update_height function that takes
 // a Node* and updates its height field based on the heights of its children
-void update_height (Node* node) {
-
+int get_height(Node *&node) {
+    return (node == nullptr) ? 0 : node->height;
 }
 
-// balance() function here
+void update_height(Node *&node) {
+    node->height = std::max(get_height(node->left), get_height(node->right)) + 1;
+}
 
-void promote_left(Node*& root) {
+int get_balance (Node *&node){
+    return get_height(node->right) - get_height(node->left);
+}
+
+
+void promote_left(Node *&root) {
     // implement promote_left here
     auto new_root = root->right;
     root->right = new_root->left;
@@ -29,7 +36,7 @@ void promote_left(Node*& root) {
     root = new_root;
 }
 
-void promote_right(Node*& root) {
+void promote_right(Node *&root) {
     // implement promote_right here
     auto new_root = root->left;
     root->left = new_root->right;
@@ -41,41 +48,42 @@ void promote_right(Node*& root) {
     root = new_root;
 }
 
-void rebalance(Node*& root) {
-    // implement rebalance here
-
-    // int balance = ;
-
-    // conditions:
-    // left heavy
-        // left-right
-        // left-left
-
-    // right heavy
-        // right left
-        // right right
-}
-
-void promote_left_child (Node *&node) { // rotate right
-    auto new_root = node->left;
-    node->left = node->left->right;
-    new_root->right = node;
-    node = new_root;
-}
-
-void promote_right_child (Node *&node) { // rotate left
-    auto new_root = node->right;
-    node->right = node->right->left;
-    new_root->left = node;
-    node = new_root;
-}
-
-void rebalance_positive(Node *& node) {
-    // Is the sign of the left child positive?
-    if (node->right.balance > 0) {
-        // Promote left's right child
-        promote_left_child(node->right);
+void rebalance_negative(Node *&node) {
+// Is the sign of the left child positive?
+    if (get_balance(node->left) > 0) {
+// Promote left's right child
+        promote_right(node->left);
     }
-    // Now rotate left
-    promote_right_child(node);
+// Now rotate left
+    promote_left(node);
 }
+
+
+void rebalance_positive(Node *&node) {
+// Is the sign of the left child positive?
+    if (get_balance(node->right) < 0) {
+// Promote left's right child
+        promote_left(node->right);
+    }
+// Now rotate left
+    promote_right(node);
+}
+
+
+void rebalance(Node *&root) {
+    // implement rebalance here
+    int balance = get_balance(root);
+    if (balance > 1) {
+        rebalance_positive(root);
+        return;
+    }
+    if (balance < -1) {
+        rebalance_negative(root);
+        return;
+    }
+    update_height(root);
+}
+
+
+
+
