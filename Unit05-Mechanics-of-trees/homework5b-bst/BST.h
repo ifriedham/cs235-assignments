@@ -27,19 +27,19 @@ public:
     bool insert(T item) {
         // implement insert here
         // return true if item was inserted, false if item was already in the tree
-        add(root, item);
+        return add(root, item);
     }
 
     bool remove(T item) {
         // implement remove here
         // return true if item was removed, false if item wasn't in the tree
-        remove(root, item);
+        return remove(root, item);
     }
 
     bool contains(T item) const {
         // implement contains here
         // return true if item is in the tree, false otherwise
-        find(root, item);
+        return find(root, item);
     }
 
     void clear() {
@@ -69,7 +69,7 @@ private:
         delete node;
     }
 
-    bool find(const Node *&node, T item) const {
+    bool find(const Node *node, T item) const {
         if (node == nullptr) return false;
         if (node->value == item) {
             return true;
