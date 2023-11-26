@@ -23,29 +23,24 @@ int get_balance (Node *&node){
     return get_height(node->right) - get_height(node->left);
 }
 
-
 void promote_left(Node *&root) {
     // implement promote_left here
-    auto new_root = root->right;
-    root->right = new_root->left;
-    new_root->left = root;
-
-    update_height(root);
-    update_height(new_root);
-
+    auto new_root = root->left;
+    root->left = root->left->right;
+    new_root->right = root;
     root = new_root;
+    update_height(root->right);
+    update_height(root);
 }
 
 void promote_right(Node *&root) {
     // implement promote_right here
-    auto new_root = root->left;
-    root->left = new_root->right;
-    new_root->right = root;
-
-    update_height(root);
-    update_height(new_root);
-
+    auto new_root = root->right;
+    root->right = root->right->left;
+    new_root->left = root;
     root = new_root;
+    update_height(root->left);
+    update_height(root);
 }
 
 void rebalance_negative(Node *&node) {
@@ -55,7 +50,7 @@ void rebalance_negative(Node *&node) {
         promote_right(node->left);
     }
     // Now rotate right
-    promote_right(node);
+    promote_left(node);
 }
 
 void rebalance_positive(Node *&node) {
@@ -65,20 +60,19 @@ void rebalance_positive(Node *&node) {
         promote_left(node->right);
     }
     // Now rotate left
-    promote_left(node);
+    promote_right(node);
 }
 
 
 void rebalance(Node *&root) {
     // implement rebalance here
     int balance = get_balance(root);
+
     if (balance > 1) {
         rebalance_positive(root);
-        return;
-    }
-    if (balance < -1) {
+    } else if (balance < -1) {
         rebalance_negative(root);
-        return;
     }
+
     update_height(root);
 }
