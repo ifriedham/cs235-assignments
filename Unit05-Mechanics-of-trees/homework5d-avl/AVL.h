@@ -99,7 +99,8 @@ private:
             changed = add(node->right, item);
         }
         if (changed) {
-            rebalanced(node);
+            update_height(node);
+            rebalance(node);
         }
         return changed;
     }
@@ -126,6 +127,8 @@ private:
                 node->value = iop->value;
                 remove(node->left, iop->value);
             }
+            update_height(node);
+            rebalance(node);
             nodeCount--;
             return true;
         }
