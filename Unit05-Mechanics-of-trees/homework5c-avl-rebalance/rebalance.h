@@ -15,6 +15,7 @@ void update_height (Node* node) {
 
 }
 
+// balance() function here
 
 void promote_left(Node*& root) {
     // implement promote_left here
@@ -42,4 +43,39 @@ void promote_right(Node*& root) {
 
 void rebalance(Node*& root) {
     // implement rebalance here
+
+    // int balance = ;
+
+    // conditions:
+    // left heavy
+        // left-right
+        // left-left
+
+    // right heavy
+        // right left
+        // right right
+}
+
+void promote_left_child (Node *&node) { // rotate right
+    auto new_root = node->left;
+    node->left = node->left->right;
+    new_root->right = node;
+    node = new_root;
+}
+
+void promote_right_child (Node *&node) { // rotate left
+    auto new_root = node->right;
+    node->right = node->right->left;
+    new_root->left = node;
+    node = new_root;
+}
+
+void rebalance_positive(Node *& node) {
+    // Is the sign of the left child positive?
+    if (node->right.balance > 0) {
+        // Promote left's right child
+        promote_left_child(node->right);
+    }
+    // Now rotate left
+    promote_right_child(node);
 }
