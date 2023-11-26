@@ -21,13 +21,23 @@ void promote_left(Node*& root) {
     auto new_root = root->right;
     root->right = new_root->left;
     new_root->left = root;
+
     update_height(root);
     update_height(new_root);
+
     root = new_root;
 }
 
 void promote_right(Node*& root) {
     // implement promote_right here
+    auto new_root = root->left;
+    root->left = new_root->right;
+    new_root->right = root;
+
+    update_height(root);
+    update_height(new_root);
+
+    root = new_root;
 }
 
 void rebalance(Node*& root) {
