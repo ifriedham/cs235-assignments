@@ -49,24 +49,23 @@ void promote_right(Node *&root) {
 }
 
 void rebalance_negative(Node *&node) {
-// Is the sign of the left child positive?
+    // Is the sign of the left child positive?
     if (get_balance(node->left) > 0) {
-// Promote left's right child
+        // Promote left's right child
         promote_right(node->left);
     }
-// Now rotate left
-    promote_left(node);
+    // Now rotate right
+    promote_right(node);
 }
 
-
 void rebalance_positive(Node *&node) {
-// Is the sign of the left child positive?
+    // Is the sign of the right child negative?
     if (get_balance(node->right) < 0) {
-// Promote left's right child
+        // Promote right's left child
         promote_left(node->right);
     }
-// Now rotate left
-    promote_right(node);
+    // Now rotate left
+    promote_left(node);
 }
 
 
@@ -83,7 +82,3 @@ void rebalance(Node *&root) {
     }
     update_height(root);
 }
-
-
-
-
