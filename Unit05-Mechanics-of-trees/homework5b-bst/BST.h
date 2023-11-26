@@ -11,11 +11,7 @@ public:
         Node(T v) : left(nullptr), right(nullptr), value(v) {}
     };
 
-    BST() : root(nullptr), nodeCount(0) {
-        // implement the constructor here
-//        root = nullptr;
-//        nodeCount = 0;
-    }
+    BST() : root(nullptr), nodeCount(0) {} // implement the constructor here
 
     ~BST() {
         // implement the destructor here
@@ -31,6 +27,7 @@ public:
     bool insert(T item) {
         // implement insert here
         // return true if item was inserted, false if item was already in the tree
+        add(root, item);
     }
 
     bool remove(T item) {
@@ -80,5 +77,58 @@ private:
         } else { // check right
             return find(root->right, item);
         }
+    }
+
+    bool add(Node *&node, T item){
+        if (node == nullptr) {
+            node = new Node(item);
+            nodeCount++;
+            return true;
+        }
+
+        if (node->value == item){
+            return false;
+        }
+
+        if (item < node->value){
+            return add(node->left, item);
+        } else {
+            return add(node->right, item);
+        }
+    }
+
+    bool remove(Node *& node, T item){
+        if (node == nullptr){
+            return false;
+        }
+
+        if (item < node->value){
+            return remove(node->left, item);
+        } else if (item > node->value){
+            return remove(node->right, item);
+        } else { // node with value 'item' found
+            if (node->right == nullptr && node->right == nullptr){ // node is leaf
+                delete node;
+                node = nullptr;
+            } else if (node->left == nullptr){ // node has right child
+                node = node->right;
+            } else if (node->right == nullptr){ // node has left child
+                node = node->left;
+            } else { //node has 2 children
+                Node* iop = getIOP(node);
+                node->value = iop->value;
+                remove(node->left, iop->value);
+            }
+            nodeCount--;
+            return true;
+        }
+    }
+
+    Node* getIOP(Node* const& node) { // finds Inorder Predecessor
+        Node* iop = node->left;
+        while (iop->right != nullptr) {
+            iop = iop->right;
+        }
+        return iop;
     }
 };
