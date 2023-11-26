@@ -73,7 +73,7 @@ private:
         if (node == nullptr) return false;
         if (node->value == item) {
             return true;
-        } else if (item < node->value) { //check left
+        } else if (item < node->value) { // check left
             return find(node->left, item);
         } else { // check right
             return find(node->right, item);
@@ -108,7 +108,7 @@ private:
         } else if (item > node->value) {
             return remove(node->right, item);
         } else { // node with value 'item' found
-            if (node->right == nullptr && node->right == nullptr) { // node is leaf
+            if (node->left == nullptr && node->right == nullptr) { // node is leaf
                 delete node;
                 node = nullptr;
             } else if (node->left == nullptr) { // node has right child
