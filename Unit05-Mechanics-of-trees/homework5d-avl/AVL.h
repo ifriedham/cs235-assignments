@@ -59,7 +59,7 @@ public:
 
 private:
     Node *root;
-    int nodeCount;
+    size_t nodeCount;
 
     void clear(Node *&node) {
         if (node == nullptr) {
@@ -110,28 +110,45 @@ private:
             return false;
         }
 
+        bool changed = false;
         if (item < node->value) {
-            return remove(node->left, item);
+            changed = remove(node->left, item);
         } else if (item > node->value) {
-            return remove(node->right, item);
+            changed = remove(node->right, item);
         } else { // node with value 'item' found
             if (node->left == nullptr && node->right == nullptr) { // node is leaf
                 delete node;
                 node = nullptr;
-            } else if (node->left == nullptr) { // node has right child
+                // changed = true; 
+            } else if (node->left == nullptr) { // node only has right child
                 node = node->right;
-            } else if (node->right == nullptr) { // node has left child
+                // changed = true; 
+            } else if (node->right == nullptr) { // node only has left child
                 node = node->left;
-            } else { //node has 2 children
+                // changed = true; 
+            } else { // node has 2 children
                 Node *iop = getIOP(node);
                 node->value = iop->value;
-                remove(node->left, iop->value);
+                changed = remove(node->left, iop->value);
+                // changed = true; 
             }
-            update_height(node);
-            rebalance(node);
+
+            if (changed){
+                update_height(node);
+                rebalance(node);
+            }
+
             nodeCount--;
-            return true;
+            return changed;
         }
+    }
+
+    Node *getIOP(Node *const &node) { // finds Inorder Predecessor
+        Node *iop = node->left;
+        while (iop->right != nullptr) {
+            iop = iop->right;
+        }
+        return iop;
     }
 
     int get_height(Node *&node) {
