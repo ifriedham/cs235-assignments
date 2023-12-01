@@ -112,21 +112,36 @@ private:
 
         bool changed = false;
 
-        if (item < node->value) {
-            changed = add(node->left, item);
-        } else {
-            changed = add(node->right, item);
+        if (item < node->value) { // searching left
+            changed = remove(node->left, item);
+        } else if (item > node->value) { // searching right
+            changed = remove(node->right, item);
+        } else { // item found
+            if (node->left == nullptr || node->right == nullptr){ // node has 1 child || node is a leaf
+                Node *temp = node->left ? node->left : node->right;
+                if (node->left == nullptr && node->right == nullptr) { // leaf
+                    //temp = node;
+                    delete node;
+                    node = nullptr;
+                }
+                else { // 1 child
+                    *node = *temp;
+                    delete temp;
+                }
+                changed = true;
+            } else { // node has 2 children
+                Node *iop = getIOP(node);
+                node->value = iop->value;
+                changed = remove(node->left, iop->value);
+            }
         }
+
         if (changed) {
             update_height(node);
             rebalance(node);
         }
+
         return changed;
-
-
-
-
-
 
 //        //std::cout << "In remove: looking for item " << std::endl;
 //        if (node == nullptr) {
