@@ -106,41 +106,68 @@ private:
     }
 
     bool remove(Node *&node, T item) {
-        if (node == nullptr) {
+        if (node == nullptr) { // node not found
             return false;
         }
 
         bool changed = false;
+
         if (item < node->value) {
-            changed = remove(node->left, item);
-        } else if (item > node->value) {
-            changed = remove(node->right, item);
-        } else { // node with value 'item' found
-            if (node->left == nullptr && node->right == nullptr) { // node is leaf
-                delete node;
-                node = nullptr;
-                // changed = true; 
-            } else if (node->left == nullptr) { // node only has right child
-                node = node->right;
-                // changed = true; 
-            } else if (node->right == nullptr) { // node only has left child
-                node = node->left;
-                // changed = true; 
-            } else { // node has 2 children
-                Node *iop = getIOP(node);
-                node->value = iop->value;
-                changed = remove(node->left, iop->value);
-                // changed = true; 
-            }
-
-            if (changed){
-                update_height(node);
-                rebalance(node);
-            }
-
-            nodeCount--;
-            return changed;
+            changed = add(node->left, item);
+        } else {
+            changed = add(node->right, item);
         }
+        if (changed) {
+            update_height(node);
+            rebalance(node);
+        }
+        return changed;
+
+
+
+
+
+
+//        //std::cout << "In remove: looking for item " << std::endl;
+//        if (node == nullptr) {
+//            return false;
+//        }
+//
+//        bool changed = false;
+//        if (item < node->value) {
+//            changed = remove(node->left, item);
+//        } else if (item > node->value) {
+//            changed = remove(node->right, item);
+//        } else { // node with value 'item' found
+//            if (node->left == nullptr && node->right == nullptr) { // node is leaf
+//                delete node;
+//                node = nullptr;
+//                changed = true;
+//                update_height(node);
+//                rebalance(node);
+//            } else if (node->left == nullptr) { // node only has right child
+//                node = node->right;
+//                changed = true;
+//                update_height(node);
+//                rebalance(node);
+//            } else if (node->right == nullptr) { // node only has left child
+//                node = node->left;
+//                changed = true;
+//                update_height(node);
+//                rebalance(node);
+//            } else { // node has 2 children
+//                Node *iop = getIOP(node);
+//                node->value = iop->value;
+//                update_height(node);
+//                changed = remove(node->left, iop->value);
+//                changed = true;
+//                update_height(node);
+//                rebalance(node);
+//            }
+//
+//            nodeCount--;
+//            return changed;
+//        }
     }
 
     Node *getIOP(Node *const &node) { // finds Inorder Predecessor
