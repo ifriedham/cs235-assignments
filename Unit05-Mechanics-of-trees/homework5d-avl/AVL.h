@@ -1,4 +1,3 @@
-
 #pragma once
 
 template<class T>
@@ -112,37 +111,43 @@ private:
         }
 
         bool changed = false;
+        bool isLeaf = false;
         if (item < node->value) {
             changed = remove(node->left, item);
+            if (isLeaf) {
+                update_height(node);
+                rebalance(node);
+                isLeaf = false;
+            }
         } else if (item > node->value) {
             changed = remove(node->right, item);
+            if (isLeaf) {
+                update_height(node);
+                rebalance(node);
+                isLeaf = false;
+            }
         } else { // node with value 'item' found
             if (node->left == nullptr && node->right == nullptr) { // node is leaf
-                Node *parent = findParent(root, node); // Implement a function to find the parent
                 delete node;
                 node = nullptr;
                 changed = true;
-                if (parent != nullptr) {
-                    update_height(parent);
-                    rebalance(parent);
-                }
+                isLeaf = true;
+                //update_height(node);
+                //rebalance(node);
             } else if (node->left == nullptr) { // node only has right child
-                Node *temp = node;
                 node = node->right;
-                delete temp;
                 changed = true;
                 update_height(node);
                 rebalance(node);
             } else if (node->right == nullptr) { // node only has left child
-                Node *temp = node;
                 node = node->left;
-                delete temp;
                 changed = true;
                 update_height(node);
                 rebalance(node);
             } else { // node has 2 children
                 Node *iop = getIOP(node);
                 node->value = iop->value;
+                update_height(node);
                 changed = remove(node->left, iop->value);
                 changed = true;
                 update_height(node);
@@ -150,24 +155,7 @@ private:
             }
 
             nodeCount--;
-        }
-
-        return changed;
-    }
-
-    Node* findParent(Node* current, Node* child) {
-        if (current == nullptr || child == nullptr) {
-            return nullptr;
-        }
-
-        if ((current->left == child) || (current->right == child)) {
-            return current;
-        }
-
-        if (child->value < current->value) {
-            return findParent(current->left, child);
-        } else {
-            return findParent(current->right, child);
+            return changed;
         }
     }
 
