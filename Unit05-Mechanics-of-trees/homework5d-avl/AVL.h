@@ -1,3 +1,4 @@
+
 #pragma once
 
 template<class T>
@@ -106,83 +107,46 @@ private:
     }
 
     bool remove(Node *&node, T item) {
-        if (node == nullptr) { // node not found
+        std::cout << "In remove: looking for item " << std::endl;
+        if (node == nullptr) {
             return false;
         }
 
         bool changed = false;
-
-        if (item < node->value) { // searching left
+        if (item < node->value) {
             changed = remove(node->left, item);
-        } else if (item > node->value) { // searching right
+        } else if (item > node->value) {
             changed = remove(node->right, item);
-        } else { // item found
-            if (node->left == nullptr || node->right == nullptr){ // node has 1 child || node is a leaf
-                Node *temp = node->left ? node->left : node->right;
-                if (node->left == nullptr && node->right == nullptr) { // leaf
-                    //temp = node;
-                    delete node;
-                    node = nullptr;
-                }
-                else { // 1 child
-                    *node = *temp;
-                    delete temp;
-                }
+        } else { // node with value 'item' found
+            if (node->left == nullptr && node->right == nullptr) { // node is leaf
+                delete node;
+                node = nullptr;
                 changed = true;
+                update_height(node);
+                rebalance(node);
+            } else if (node->left == nullptr) { // node only has right child
+                node = node->right;
+                changed = true;
+                update_height(node);
+                rebalance(node);
+            } else if (node->right == nullptr) { // node only has left child
+                node = node->left;
+                changed = true;
+                update_height(node);
+                rebalance(node);
             } else { // node has 2 children
                 Node *iop = getIOP(node);
                 node->value = iop->value;
+                update_height(node);
                 changed = remove(node->left, iop->value);
+                changed = true;
+                update_height(node);
+                rebalance(node);
             }
+
+            nodeCount--;
+            return changed;
         }
-
-        if (changed) {
-            update_height(node);
-            rebalance(node);
-        }
-
-        return changed;
-
-//        //std::cout << "In remove: looking for item " << std::endl;
-//        if (node == nullptr) {
-//            return false;
-//        }
-//
-//        bool changed = false;
-//        if (item < node->value) {
-//            changed = remove(node->left, item);
-//        } else if (item > node->value) {
-//            changed = remove(node->right, item);
-//        } else { // node with value 'item' found
-//            if (node->left == nullptr && node->right == nullptr) { // node is leaf
-//                delete node;
-//                node = nullptr;
-//                changed = true;
-//                update_height(node);
-//                rebalance(node);
-//            } else if (node->left == nullptr) { // node only has right child
-//                node = node->right;
-//                changed = true;
-//                update_height(node);
-//                rebalance(node);
-//            } else if (node->right == nullptr) { // node only has left child
-//                node = node->left;
-//                changed = true;
-//                update_height(node);
-//                rebalance(node);
-//            } else { // node has 2 children
-//                Node *iop = getIOP(node);
-//                node->value = iop->value;
-//                update_height(node);
-//                changed = remove(node->left, iop->value);
-//                changed = true;
-//                update_height(node);
-//                rebalance(node);
-//            }
-//
-//            nodeCount--;
-//            return changed;
-//        }
     }
 
     Node *getIOP(Node *const &node) { // finds Inorder Predecessor
