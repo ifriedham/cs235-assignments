@@ -1,0 +1,32 @@
+{
+    "tests": [
+        {
+            "score": 4.693,
+            "max_score": 5.0,
+            "name": "test_iterator.py::test_1[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output ---                                   | --- Test 1 output ---                                  \nE                                                                     |                                                        \nE             vector = 1 2 3 4 5                                      | vector = 1 2 3 4 5                                     \nE                                                                     |                                                        \nE             using for-each syntax to increment each element by 1... | using for-each syntax to increment each element by 1...\nE             vector = 2 3 4 5 6                                      | vector = 2 3 4 5 6\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 40.5,
+            "max_score": 45.0,
+            "name": "test_iterator.py::test_1[transformed]",
+            "output": "\ngroup_name = 'transformed'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '2 3 4 5 6\\r' == '2 3 4 5 6'\nE             - 2 3 4 5 6\nE             + 2 3 4 5 6\r\nE             ?          +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.7552,
+            "max_score": 5.0,
+            "name": "test_iterator.py::test_2[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 2 output ---                                   | --- Test 2 output ---                                  \nE                                                                     |                                                        \nE             vector = waterfall enigma guitar zebra luminous         | vector = waterfall enigma guitar zebra luminous        \nE                                                                     |                                                        \nE             using for-each syntax to make each element uppercase... | using for-each syntax to make each element uppercase...\nE             vector = WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS         | vector = WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 43.8462,
+            "max_score": 45.0,
+            "name": "test_iterator.py::test_2[transformed]",
+            "output": "\ngroup_name = 'transformed'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS\\r' == 'WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS'\nE             - WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS\nE             + WATERFALL ENIGMA GUITAR ZEBRA LUMINOUS\r\nE             ?                                       +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}

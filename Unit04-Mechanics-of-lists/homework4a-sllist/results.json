@@ -1,0 +1,158 @@
+{
+    "tests": [
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_1_push_back[list-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_1_push_back[list-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_1_push_back[list-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_1_push_back[list-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_2_pop_back[list-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_2_pop_back[list-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_2_pop_back[list-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 5.4,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_2_pop_back[list-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.0,
+            "max_score": 6.0,
+            "name": "test_sllist.py::test_3_front[front-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.0,
+            "max_score": 6.0,
+            "name": "test_sllist.py::test_3_front[front-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.6512,
+            "max_score": 3.0,
+            "name": "test_sllist.py::test_1_push_back[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output --- | --- Test 1 output ---\nE                                   |                      \nE             list.push_back(1)     | list.push_back(1)    \nE             list = 1              | list = 1             \nE                                   |                      \nE             list.push_back(2)     | list.push_back(2)    \nE             list = 1 2            | list = 1 2           \nE                                   |                      \nE             list.push_back(3)     | list.push_back(3)    \nE             list = 1 2 3          | list = 1 2 3         \nE                                   |                      \nE             list.push_back(4)     | list.push_back(4)    \nE             list = 1 2 3 4        | list = 1 2 3 4       \nE                                   |                      \nE             list.push_back(5)     | list.push_back(5)    \nE             list = 1 2 3 4 5      | list = 1 2 3 4 5\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.86,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_1_push_back[list-5]",
+            "output": "\ngroup_name = 'list-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '1 2 3 4 5\\r' == '1 2 3 4 5'\nE             - 1 2 3 4 5\nE             + 1 2 3 4 5\r\nE             ?          +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.6057,
+            "max_score": 3.0,
+            "name": "test_sllist.py::test_2_pop_back[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 2 output --- | --- Test 2 output ---\nE                                   |                      \nE             list = 1 2 3 4 5      | list = 1 2 3 4 5     \nE                                   |                      \nE             list.pop_back()       | list.pop_back()      \nE             list = 1 2 3 4        | list = 1 2 3 4       \nE                                   |                      \nE             list.pop_back()       | list.pop_back()      \nE             list = 1 2 3          | list = 1 2 3         \nE                                   |                      \nE             list.pop_back()       | list.pop_back()      \nE             list = 1 2            | list = 1 2           \nE                                   |                      \nE             list.pop_back()       | list.pop_back()      \nE             list = 1              | list = 1             \nE                                   |                      \nE             list.pop_back()       | list.pop_back()      \nE             list =                | list =\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.6286,
+            "max_score": 5.4,
+            "name": "test_sllist.py::test_2_pop_back[empty-list]",
+            "output": "\ngroup_name = 'empty-list'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'list =\\r' == 'list ='\nE             - list =\nE             + list =\r\nE             ?       +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8565,
+            "max_score": 2.0,
+            "name": "test_sllist.py::test_3_front[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 3 output ---    | --- Test 3 output ---   \nE                                      |                         \nE             list.push_back(kindness) | list.push_back(kindness)\nE             list.push_back(peace)    | list.push_back(peace)   \nE             list.front() = kindness  | list.front() = kindness \nE                                      |                         \nE             list.pop_back()          | list.pop_back()         \nE             list.pop_back()          | list.pop_back()         \nE             list.push_back(zebra)    | list.push_back(zebra)   \nE             list.front() = zebra     | list.front() = zebra    \nE                                      |                         \nE             list.pop_back()          | list.pop_back()         \nE             list.push_back(joy)      | list.push_back(joy)     \nE             list.front() = joy       | list.front() = joy\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.5,
+            "max_score": 6.0,
+            "name": "test_sllist.py::test_3_front[front-3]",
+            "output": "\ngroup_name = 'front-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'joy\\r' == 'joy'\nE             - joy\nE             + joy\r\nE             ?    +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.0,
+            "name": "test_sllist.py::test_4_size_and_clear[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 4 output ---\\n\\nlist.size() = 0\\n\\nlist.push_back(2)\\nlist.push_back(5)\\nlist.size() = 2\\n\\nlist.pop_back()\\nlist.size() = 1\\n\\nlist.clear()\\nlist.size() = 0\\n\\nlist.push_back(6)\\nlist.push_back(7)\\nlist.push_back(9)\\nlist.size() = 3\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 4 output ---\\n\\nlist.size() = 0\\n\\nlist.push_back(2)\\nlist.push_back(5)\\nlist.size() = 2\\n\\nlist.pop_back()\\nlist.size() = 1\\n\\nlist.clear()\\nlist.size() = 0\\n\\nlist.push_back(6)\\nlist.push_back(7)\\nlist.push_back(9)\\nlist.size() = 3\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.6,
+            "name": "test_sllist.py::test_4_size_and_clear[size-1]",
+            "output": "\ngroup_name = 'size-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '0'\nE             - 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.6,
+            "name": "test_sllist.py::test_4_size_and_clear[size-2]",
+            "output": "\ngroup_name = 'size-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '2'\nE             - 2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.6,
+            "name": "test_sllist.py::test_4_size_and_clear[size-3]",
+            "output": "\ngroup_name = 'size-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1'\nE             - 1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.6,
+            "name": "test_sllist.py::test_4_size_and_clear[size-4]",
+            "output": "\ngroup_name = 'size-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '0'\nE             - 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.6,
+            "name": "test_sllist.py::test_4_size_and_clear[size-5]",
+            "output": "\ngroup_name = 'size-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}

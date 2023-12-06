@@ -1,0 +1,613 @@
+{
+    "tests": [
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test1_insert[insert-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.5,
+            "max_score": 0.5,
+            "name": "test_avl.py::test1_insert[tree-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test1_insert[insert-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test1_insert[insert-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test2_insert[insert-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.5,
+            "max_score": 0.5,
+            "name": "test_avl.py::test2_insert[tree-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test2_insert[insert-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.125,
+            "max_score": 0.125,
+            "name": "test_avl.py::test2_insert[insert-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.15,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.15,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2036,
+            "max_score": 0.25,
+            "name": "test_avl.py::test1_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output --- | --- Test 1 output ---\nE                                   |                      \nE             tree.insert(1) = true | tree.insert(1) = true\nE                                   |                      \nE              1|1                  |  1|1                 \nE                                   |                      \nE             tree.insert(2) = true | tree.insert(2) = true\nE                                   |                      \nE                  1|2              |      1|2             \nE                                   |                      \nE                      2|1          |          2|1         \nE                                   |                      \nE             tree.insert(3) = true | tree.insert(3) = true\nE                                   |                      \nE                  2|2              |      2|2             \nE                                   |                      \nE              1|1     3|1          |  1|1     3|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.4375,
+            "max_score": 0.5,
+            "name": "test_avl.py::test1_insert[tree-2]",
+            "output": "\ngroup_name = 'tree-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '     1|2\\r\\n\\r\\n         2|1' == '     1|2\\n\\n         2|1'\nE             -      1|2\nE             +      1|2\r\nE             ?         +\nE             - \nE             + \r\nE                        2|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.735,
+            "max_score": 0.875,
+            "name": "test_avl.py::test1_insert[tree-3]",
+            "output": "\ngroup_name = 'tree-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '     2|2\\r\\n\\r\\n 1|1     3|1\\r' == '     2|2\\n\\n 1|1     3|1'\nE             -      2|2\nE             +      2|2\r\nE             ?         +\nE             - \nE             + \r\nE             -  1|1     3|1\nE             +  1|1     3|1\r\nE             ?             +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2036,
+            "max_score": 0.25,
+            "name": "test_avl.py::test2_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 2 output --- | --- Test 2 output ---\nE                                   |                      \nE             tree.insert(3) = true | tree.insert(3) = true\nE                                   |                      \nE              3|1                  |  3|1                 \nE                                   |                      \nE             tree.insert(2) = true | tree.insert(2) = true\nE                                   |                      \nE                  3|2              |      3|2             \nE                                   |                      \nE              2|1                  |  2|1                 \nE                                   |                      \nE             tree.insert(1) = true | tree.insert(1) = true\nE                                   |                      \nE                  2|2              |      2|2             \nE                                   |                      \nE              1|1     3|1          |  1|1     3|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.4375,
+            "max_score": 0.5,
+            "name": "test_avl.py::test2_insert[tree-2]",
+            "output": "\ngroup_name = 'tree-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '     3|2\\r\\n\\r\\n 2|1        ' == '     3|2\\n\\n 2|1        '\nE             -      3|2\nE             +      3|2\r\nE             ?         +\nE             - \nE             + \r\nE                2|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.735,
+            "max_score": 0.875,
+            "name": "test_avl.py::test2_insert[tree-3]",
+            "output": "\ngroup_name = 'tree-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '     2|2\\r\\n\\r\\n 1|1     3|1\\r' == '     2|2\\n\\n 1|1     3|1'\nE             -      2|2\nE             +      2|2\r\nE             ?         +\nE             - \nE             + \r\nE             -  1|1     3|1\nE             +  1|1     3|1\r\nE             ?             +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.375,
+            "name": "test_avl.py::test3_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 3 output ---\\n\\n             4|3\\n\\n     3|2             5|1\\n\\n 2|1                        \\n\\ntree.insert(1) = true\\n\\n             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 3 output ---\\n\\n             4|3\\n\\n     3|2             5|1\\n\\n 2|1                        \\n\\ntree.insert(1) = true\\n\\n             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.375,
+            "name": "test_avl.py::test3_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                '\nE             -              4|3\nE             - \nE             -      2|2             5|1\nE             - \nE             -  1|1     3|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.375,
+            "name": "test_avl.py::test4_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 4 output ---\\n\\n             4|3\\n\\n     3|2             5|1\\n\\n 1|1                        \\n\\ntree.insert(2) = true\\n\\n             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                \\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 4 output ---\\n\\n             4|3\\n\\n     3|2             5|1\\n\\n 1|1                        \\n\\ntree.insert(2) = true\\n\\n             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                \\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.375,
+            "name": "test_avl.py::test4_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '             4|3\\n\\n     2|2             5|1\\n\\n 1|1     3|1                '\nE             -              4|3\nE             - \nE             -      2|2             5|1\nE             - \nE             -  1|1     3|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.3321,
+            "max_score": 0.375,
+            "name": "test_avl.py::test5_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 5 output ---        | --- Test 5 output ---       \nE                                          |                             \nE                          2|3             |              2|3            \nE                                          |                             \nE                  1|1             3|2     |      1|1             3|2    \nE                                          |                             \nE                                      4|1 |                          4|1\nE                                          |                             \nE             tree.insert(5) = true        | tree.insert(5) = true       \nE                                          |                             \nE                          2|3             |              2|3            \nE                                          |                             \nE                  1|1             4|2     |      1|1             4|2    \nE                                          |                             \nE                              3|1     5|1 |                  3|1     5|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 3.0682,
+            "max_score": 3.375,
+            "name": "test_avl.py::test5_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE                          2|3             |              2|3            \nE                                          |                             \nE                  1|1             4|2     |      1|1             4|2    \nE                                          |                             \nE                              3|1     5|1 |                  3|1     5|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.375,
+            "name": "test_avl.py::test6_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 6 output ---\\n\\n             2|3\\n\\n     1|1             3|2\\n\\n                         5|1\\n\\ntree.insert(4) = true\\n\\n             2|3\\n\\n     1|1             4|2\\n\\n                 3|1     5|1\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 6 output ---\\n\\n             2|3\\n\\n     1|1             3|2\\n\\n                         5|1\\n\\ntree.insert(4) = true\\n\\n             2|3\\n\\n     1|1             4|2\\n\\n                 3|1     5|1\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.375,
+            "name": "test_avl.py::test6_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '             2|3\\n\\n     1|1             4|2\\n\\n                 3|1     5|1'\nE             -              2|3\nE             - \nE             -      1|1             4|2\nE             - \nE             -                  3|1     5|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.6989,
+            "max_score": 0.75,
+            "name": "test_avl.py::test7_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 7 output ---                                        | --- Test 7 output ---                                       \nE                                                                          |                                                             \nE                                          4|4                             |                              4|4                            \nE                                                                          |                                                             \nE                          2|2                             8|3             |              2|2                             8|3            \nE                                                                          |                                                             \nE                  1|1             3|1             6|2            10|2     |      1|1             3|1             6|2            10|2    \nE                                                                          |                                                             \nE                                              5|1     7|1     9|1    11|1 |                                  5|1     7|1     9|1    11|1\nE                                                                          |                                                             \nE             tree.insert(12) = true                                       | tree.insert(12) = true                                      \nE                                                                          |                                                             \nE                                          8|4                             |                              8|4                            \nE                                                                          |                                                             \nE                          4|3                            10|3             |              4|3                            10|3            \nE                                                                          |                                                             \nE                  2|2             6|2             9|1            11|2     |      2|2             6|2             9|1            11|2    \nE                                                                          |                                                             \nE              1|1     3|1     5|1     7|1                            12|1 |  1|1     3|1     5|1     7|1                            12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.427,
+            "max_score": 6.75,
+            "name": "test_avl.py::test7_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE                                          8|4                             |                              8|4                            \nE                                                                          |                                                             \nE                          4|3                            10|3             |              4|3                            10|3            \nE                                                                          |                                                             \nE                  2|2             6|2             9|1            11|2     |      2|2             6|2             9|1            11|2    \nE                                                                          |                                                             \nE              1|1     3|1     5|1     7|1                            12|1 |  1|1     3|1     5|1     7|1                            12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.75,
+            "name": "test_avl.py::test8_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 8 output ---\\n\\n                             4|4\\n\\n             2|2                             9|3\\n\\n     1|1             3|1             6|2            11|2\\n\\n                                 5|1     7|1    10|1    12|1\\n\\ntree.insert(8) = true\\n\\n                             6|4\\n\\n             4|3                             9|3\\n\\n     2|2             5|1             7|2            11|2\\n\\n 1|1     3|1                             8|1    10|1    12|1\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 8 output ---\\n\\n                             4|4\\n\\n             2|2                             9|3\\n\\n     1|1             3|1             6|2            11|2\\n\\n                                 5|1     7|1    10|1    12|1\\n\\ntree.insert(8) = true\\n\\n                             6|4\\n\\n             4|3                             9|3\\n\\n     2|2             5|1             7|2            11|2\\n\\n 1|1     3|1                             8|1    10|1    12|1\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 6.75,
+            "name": "test_avl.py::test8_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '                             6|4\\n\\n             4|3                             9|3\\n\\n     2|2             5|1             7|2            11|2\\n\\n 1|1     3|1                             8|1    10|1    12|1'\nE             -                              6|4\nE             - \nE             -              4|3                             9|3\nE             - \nE             -      2|2             5|1             7|2            11|2\nE             - \nE             -  1|1     3|1                             8|1    10|1    12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.6987,
+            "max_score": 0.75,
+            "name": "test_avl.py::test9_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 9 output ---                                        | --- Test 9 output ---                                       \nE                                                                          |                                                             \nE                                          9|4                             |                              9|4                            \nE                                                                          |                                                             \nE                          5|3                            11|2             |              5|3                            11|2            \nE                                                                          |                                                             \nE                  3|2             7|2            10|1            12|1     |      3|2             7|2            10|1            12|1    \nE                                                                          |                                                             \nE              2|1     4|1     6|1     8|1                                 |  2|1     4|1     6|1     8|1                                \nE                                                                          |                                                             \nE             tree.insert(1) = true                                        | tree.insert(1) = true                                       \nE                                                                          |                                                             \nE                                          5|4                             |                              5|4                            \nE                                                                          |                                                             \nE                          3|3                             9|3             |              3|3                             9|3            \nE                                                                          |                                                             \nE                  2|2             4|1             7|2            11|2     |      2|2             4|1             7|2            11|2    \nE                                                                          |                                                             \nE              1|1                             6|1     8|1    10|1    12|1 |  1|1                             6|1     8|1    10|1    12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.427,
+            "max_score": 6.75,
+            "name": "test_avl.py::test9_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE                                          5|4                             |                              5|4                            \nE                                                                          |                                                             \nE                          3|3                             9|3             |              3|3                             9|3            \nE                                                                          |                                                             \nE                  2|2             4|1             7|2            11|2     |      2|2             4|1             7|2            11|2    \nE                                                                          |                                                             \nE              1|1                             6|1     8|1    10|1    12|1 |  1|1                             6|1     8|1    10|1    12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.6989,
+            "max_score": 0.75,
+            "name": "test_avl.py::test10_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 10 output ---                                       | --- Test 10 output ---                                      \nE                                                                          |                                                             \nE                                          9|4                             |                              9|4                            \nE                                                                          |                                                             \nE                          4|3                            11|2             |              4|3                            11|2            \nE                                                                          |                                                             \nE                  2|2             7|2            10|1            12|1     |      2|2             7|2            10|1            12|1    \nE                                                                          |                                                             \nE              1|1     3|1     5|1     8|1                                 |  1|1     3|1     5|1     8|1                                \nE                                                                          |                                                             \nE             tree.insert(6) = true                                        | tree.insert(6) = true                                       \nE                                                                          |                                                             \nE                                          7|4                             |                              7|4                            \nE                                                                          |                                                             \nE                          4|3                             9|3             |              4|3                             9|3            \nE                                                                          |                                                             \nE                  2|2             5|2             8|1            11|2     |      2|2             5|2             8|1            11|2    \nE                                                                          |                                                             \nE              1|1     3|1             6|1                    10|1    12|1 |  1|1     3|1             6|1                    10|1    12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 6.427,
+            "max_score": 6.75,
+            "name": "test_avl.py::test10_insert[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE                                          7|4                             |                              7|4                            \nE                                                                          |                                                             \nE                          4|3                             9|3             |              4|3                             9|3            \nE                                                                          |                                                             \nE                  2|2             5|2             8|1            11|2     |      2|2             5|2             8|1            11|2    \nE                                                                          |                                                             \nE              1|1     3|1             6|1                    10|1    12|1 |  1|1     3|1             6|1                    10|1    12|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2411,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 11 output ---                                       | --- Test 11 output ---                                      \nE                                                                          |                                                             \nE                                          8|4                             |                              8|4                            \nE                                                                          |                                                             \nE                          4|3                            12|3             |              4|3                            12|3            \nE                                                                          |                                                             \nE                  2|2             6|2            10|2            14|2     |      2|2             6|2            10|2            14|2    \nE                                                                          |                                                             \nE              1|1     3|1     5|1             9|1    11|1    13|1    15|1 |  1|1     3|1     5|1             9|1    11|1    13|1    15|1\nE                                                                          |                                                             \nE             tree.contains(14) = true                                     | tree.contains(14) = true                                    \nE             tree.contains(4) = true                                      | tree.contains(4) = true                                     \nE             tree.contains(5) = true                                      | tree.contains(5) = true                                     \nE             tree.contains(15) = true                                     | tree.contains(15) = true                                    \nE             tree.contains(7) = false                                     | tree.contains(7) = false                                    \nE             tree.contains(2) = true                                      | tree.contains(2) = true                                     \nE             tree.contains(-3) = false                                    | tree.contains(-3) = false                                   \nE             tree.contains(17) = false                                    | tree.contains(17) = false                                   \nE             tree.contains(35) = false                                    | tree.contains(35) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-1]",
+            "output": "\ngroup_name = 'contains-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-2]",
+            "output": "\ngroup_name = 'contains-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-3]",
+            "output": "\ngroup_name = 'contains-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-4]",
+            "output": "\ngroup_name = 'contains-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2083,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-5]",
+            "output": "\ngroup_name = 'contains-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-6]",
+            "output": "\ngroup_name = 'contains-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2083,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-7]",
+            "output": "\ngroup_name = 'contains-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2083,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-8]",
+            "output": "\ngroup_name = 'contains-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2083,
+            "max_score": 0.25,
+            "name": "test_avl.py::test11_contains[contains-9]",
+            "output": "\ngroup_name = 'contains-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0676,
+            "max_score": 0.75,
+            "name": "test_avl.py::test12_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 12 output ---                                      \nE             Traceback (most recent call last):                                                                                               |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                              6|4                            \nE                 self._exec_give_input(                                                                                                       |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |              4|3                             7|2            \nE                 raise Exception(                                                                                                             |                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |      2|2             5|1                             9|1    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  1|1     3|1                                                \nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.remove(9) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              4|3                                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      2|2             6|2                                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  1|1     3|1     5|1     7|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.7941,
+            "max_score": 6.75,
+            "name": "test_avl.py::test12_remove[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \" which probably means that it's expecting an input; however, there's no input to give\" == '             4|3\\n\\n     2|2             6|2\\n\\n 1|1     3|1     5|1     7|1'\nE             +  which probably means that it's expecting an input; however, there's no input to give\nE             -              4|3\nE             - \nE             -      2|2             6|2\nE             - \nE             -  1|1     3|1     5|1     7|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.063,
+            "max_score": 0.75,
+            "name": "test_avl.py::test13_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 13 output ---                                      \nE             Traceback (most recent call last):                                                                                               |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                              6|4                            \nE                 self._exec_give_input(                                                                                                       |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |              2|3                             7|2            \nE                 raise Exception(                                                                                                             |                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |      1|1             4|2                             9|1    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |                  3|1     5|1                                \nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.remove(9) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              4|3                                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      2|2             6|2                                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  1|1     3|1     5|1     7|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.7941,
+            "max_score": 6.75,
+            "name": "test_avl.py::test13_remove[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \" which probably means that it's expecting an input; however, there's no input to give\" == '             4|3\\n\\n     2|2             6|2\\n\\n 1|1     3|1     5|1     7|1'\nE             +  which probably means that it's expecting an input; however, there's no input to give\nE             -              4|3\nE             - \nE             -      2|2             6|2\nE             - \nE             -  1|1     3|1     5|1     7|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0674,
+            "max_score": 0.75,
+            "name": "test_avl.py::test14_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 14 output ---                                      \nE             Traceback (most recent call last):                                                                                               |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                              4|4                            \nE                 self._exec_give_input(                                                                                                       |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |              3|2                             8|3            \nE                 raise Exception(                                                                                                             |                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |      2|1                             6|2             9|1    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |                                  5|1     7|1                \nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.remove(2) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              6|3                                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      4|2             8|2                                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  3|1     5|1     7|1     9|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.6313,
+            "max_score": 6.75,
+            "name": "test_avl.py::test14_remove[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \"   raise Exception(\\nException: the program is blocked, which probably means that it's expecting an input; however, there's no input to give\" == '             6|3\\n\\n     4|2             8|2\\n\\n 3|1     5|1     7|1     9|1'\nE             +    raise Exception(\nE             + Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give\nE             -              6|3\nE             - \nE             -      4|2             8|2\nE             - \nE             -  3|1     5|1     7|1     9|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0553,
+            "max_score": 0.75,
+            "name": "test_avl.py::test15_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 15 output ---                                      \nE             Traceback (most recent call last):                                                                                               |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                              4|4                            \nE                 self._exec_give_input(                                                                                                       |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |              3|2                             6|3            \nE                 raise Exception(                                                                                                             |                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |      2|1                             5|1             8|2    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |                                                  7|1     9|1\nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.remove(2) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              6|3                                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      4|2             8|2                                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  3|1     5|1     7|1     9|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.7941,
+            "max_score": 6.75,
+            "name": "test_avl.py::test15_remove[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert \" which probably means that it's expecting an input; however, there's no input to give\" == '             6|3\\n\\n     4|2             8|2\\n\\n 3|1     5|1     7|1     9|1'\nE             +  which probably means that it's expecting an input; however, there's no input to give\nE             -              6|3\nE             - \nE             -      4|2             8|2\nE             - \nE             -  3|1     5|1     7|1     9|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0557,
+            "max_score": 1.0,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 16 output ---                                                                                                      \nE             Traceback (most recent call last):                                                                                               |                                                                                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                                                             10|5                                                            \nE                 self._exec_give_input(                                                                                                       |                                                                                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |                              6|4                                                            14|3                            \nE                 raise Exception(                                                                                                             |                                                                                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |              4|3                             8|2                            12|2                            16|2            \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |      2|2             5|1             7|1                            11|1            13|1            15|1            17|1    \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |  1|1     3|1                                                                                                                \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | tree.remove(10) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |                              8|4                                                                                            \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |              4|3                            14|3                                                                            \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |      2|2             6|2            12|2            16|2                                                                    \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              |  1|1     3|1     5|1     7|1    11|1    13|1    15|1    17|1                                                                \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 8                                                                                                             \nE                                                                                                                                              | tree.remove(8) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 7                                                                                                             \nE                                                                                                                                              | tree.remove(7) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 6                                                                                                             \nE                                                                                                                                              | tree.remove(6) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 5                                                                                                             \nE                                                                                                                                              | tree.remove(5) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 4                                                                                                             \nE                                                                                                                                              | tree.remove(4) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 3                                                                                                             \nE                                                                                                                                              | tree.remove(3) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 14                                                                                                            \nE                                                                                                                                              | tree.remove(14) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 13                                                                                                            \nE                                                                                                                                              | tree.remove(13) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 12                                                                                                            \nE                                                                                                                                              | tree.remove(12) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 11                                                                                                            \nE                                                                                                                                              | tree.remove(11) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 2                                                                                                             \nE                                                                                                                                              | tree.remove(2) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 16                                                                                                            \nE                                                                                                                                              | tree.remove(16) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 15                                                                                                            \nE                                                                                                                                              | tree.remove(15) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 1                                                                                                             \nE                                                                                                                                              | tree.remove(1) = true                                                                                                       \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | root->value = 17                                                                                                            \nE                                                                                                                                              | tree.remove(17) = true                                                                                                      \nE                                                                                                                                              |                                                                                                                             \nE                                                                                                                                              | tree.size() = 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2376,
+            "max_score": 4.0,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[transformed-tree]",
+            "output": "\ngroup_name = 'transformed-tree'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert 's\\\\dialog.py\", line 389, in run_exec\\n    self._exec_give_input(\\n  File \"C:\\\\Users\\\\noah1\\\\AppData\\\\Roaming\\\\Python\\\\' == '                             8|4\\n\\n             4|3                            14|3\\n\\n     2|2             6|2            12|2            16|2\\n\\n 1|1     3|1     5|1     7|1    11|1    13|1    15|1    17|1'\nE             + s\\dialog.py\", line 389, in run_exec\nE             +     self._exec_give_input(\nE             +   File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\\nE             -                              8|4\nE             - \nE             -              4|3                            14|3\nE             - \nE             -      2|2             6|2            12|2            16|2\nE             - \nE             -  1|1     3|1     5|1     7|1    11|1    13|1    15|1    17|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-1]",
+            "output": "\ngroup_name = 'root-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '8'\nE             - 8\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-2]",
+            "output": "\ngroup_name = 'root-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'l' == '7'\nE             - 7\nE             + l\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-3]",
+            "output": "\ngroup_name = 'root-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6'\nE             - 6\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-4]",
+            "output": "\ngroup_name = 'root-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert ' ' == '5'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '5'\nE             + ' '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-5]",
+            "output": "\ngroup_name = 'root-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert ':' == '4'\nE             - 4\nE             + :\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-6]",
+            "output": "\ngroup_name = 'root-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '3'\nE             - 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-7]",
+            "output": "\ngroup_name = 'root-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'th' == '14'\nE             - 14\nE             + th\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-8]",
+            "output": "\ngroup_name = 'root-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '13'\nE             - 13\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-9]",
+            "output": "\ngroup_name = 'root-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '12'\nE             - 12\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-10]",
+            "output": "\ngroup_name = 'root-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '11'\nE             - 11\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-11]",
+            "output": "\ngroup_name = 'root-11'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '2'\nE             - 2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-12]",
+            "output": "\ngroup_name = 'root-12'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '16'\nE             - 16\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-13]",
+            "output": "\ngroup_name = 'root-13'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '15'\nE             - 15\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-14]",
+            "output": "\ngroup_name = 'root-14'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '1'\nE             - 1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.3,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[root-15]",
+            "output": "\ngroup_name = 'root-15'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '17'\nE             - 17\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.5,
+            "name": "test_avl.py::test16_repeatedly_remove_root_node[tree-is-empty]",
+            "output": "\ngroup_name = 'tree-is-empty'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '0'\nE             - 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0505,
+            "max_score": 0.5,
+            "name": "test_avl.py::test17_remove_then_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 17 output ---                                      \nE             Traceback (most recent call last):                                                                                               |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         |                              5|4                            \nE                 self._exec_give_input(                                                                                                       |                                                             \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input |              3|3                             7|2            \nE                 raise Exception(                                                                                                             |                                                             \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          |      2|2             4|1             6|1                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  1|1                                                        \nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.remove(6) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              3|3                                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      2|2             5|2                                    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |  1|1             4|1     7|1                                \nE                                                                                                                                              |                                                             \nE                                                                                                                                              | tree.insert(8) = true                                       \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |                              3|4                            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |              2|2                             5|3            \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |      1|1                             4|1             7|2    \nE                                                                                                                                              |                                                             \nE                                                                                                                                              |                                                          8|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.339,
+            "max_score": 2.25,
+            "name": "test_avl.py::test17_remove_then_insert[tree-after-remove]",
+            "output": "\ngroup_name = 'tree-after-remove'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert ' 389, in run_exec\\n    self._exec_give_input(\\n  File \"C:\\\\Users\\\\noah1\\\\AppDa' == '             3|3\\n\\n     2|2             5|2\\n\\n 1|1             4|1     7|1'\nE             +  389, in run_exec\nE             +     self._exec_give_input(\nE             +   File \"C:\\Users\\noah1\\AppDa\nE             -              3|3\nE             - \nE             -      2|2             5|2\nE             - \nE             -  1|1             4|1     7|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.2854,
+            "max_score": 2.25,
+            "name": "test_avl.py::test17_remove_then_insert[tree-after-insert]",
+            "output": "\ngroup_name = 'tree-after-insert'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert 'kages\\\\byu_pytest_utils\\\\dialog.py\", line 343, in _exec_give_input\\n    raise Exception(\\nException: the program is blocked, which probably means that it\\'s expecting an input; however, there\\'s no input to give' == '                             3|4\\n\\n             2|2                             5|3\\n\\n     1|1                             4|1             7|2\\n\\n                                                         8|1'\nE             + kages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input\nE             +     raise Exception(\nE             + Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give\nE             -                              3|4\nE             - \nE             -              2|2                             5|3\nE             - \nE             -      1|1                             4|1             7|2\nE             - \nE             -                                                          8|1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0192,
+            "max_score": 0.175,
+            "name": "test_avl.py::test18_size_and_clear[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 18 output ---\nE             Traceback (most recent call last):                                                                                               |                       \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         | tree.size() = 0       \nE                 self._exec_give_input(                                                                                                       |                       \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input | tree.insert(1) = true \nE                 raise Exception(                                                                                                             | tree.insert(2) = true \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | tree.insert(3) = true \nE                                                                                                                                              | tree.size() = 3       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.insert(1) = false\nE                                                                                                                                              | tree.insert(3) = false\nE                                                                                                                                              | tree.size() = 3       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.remove(2) = true \nE                                                                                                                                              | tree.remove(1) = true \nE                                                                                                                                              | tree.size() = 1       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.remove(1) = false\nE                                                                                                                                              | tree.size() = 1       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.remove(3) = true \nE                                                                                                                                              | tree.size() = 0       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.insert(5) = true \nE                                                                                                                                              | tree.insert(7) = true \nE                                                                                                                                              | tree.size() = 2       \nE                                                                                                                                              |                       \nE                                                                                                                                              | tree.clear()          \nE                                                                                                                                              | tree.size() = 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-1]",
+            "output": "\ngroup_name = 'size-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'p' == '0'\nE             - 0\nE             + p\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0312,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[insert-1]",
+            "output": "\ngroup_name = 'insert-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'weve' == 'true'\nE             - true\nE             + weve\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0312,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[insert-2]",
+            "output": "\ngroup_name = 'insert-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'give' == 'true'\nE             - true\nE             + give\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0312,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[insert-3]",
+            "output": "\ngroup_name = 'insert-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'rece' == 'true'\nE             - true\nE             + rece\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-2]",
+            "output": "\ngroup_name = 'size-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'F' == '3'\nE             - 3\nE             + F\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[insert-4]",
+            "output": "\ngroup_name = 'insert-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '\\\\AppD' == 'false'\nE             - false\nE             + \\AppD\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[insert-5]",
+            "output": "\ngroup_name = 'insert-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '\\\\Pyth' == 'false'\nE             - false\nE             + \\Pyth\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[remove-1]",
+            "output": "\ngroup_name = 'remove-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert ' sel' == 'true'\nE             - true\nE             +  sel\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0312,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[remove-2]",
+            "output": "\ngroup_name = 'remove-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'File' == 'true'\nE             - true\nE             + File\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.05,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[remove-3]",
+            "output": "\ngroup_name = 'remove-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'ialog' == 'false'\nE             - false\nE             + ialog\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-5]",
+            "output": "\ngroup_name = 'size-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert ' ' == '1'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '1'\nE             + ' '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0312,
+            "max_score": 0.125,
+            "name": "test_avl.py::test18_size_and_clear[remove-4]",
+            "output": "\ngroup_name = 'remove-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'aise' == 'true'\nE             - true\nE             + aise\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-6]",
+            "output": "\ngroup_name = 'size-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'e' == '0'\nE             - 0\nE             + e\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-7]",
+            "output": "\ngroup_name = 'size-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'p' == '2'\nE             - 2\nE             + p\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.15,
+            "name": "test_avl.py::test18_size_and_clear[size-8]",
+            "output": "\ngroup_name = 'size-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'e' == '0'\nE             - 0\nE             + e\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}

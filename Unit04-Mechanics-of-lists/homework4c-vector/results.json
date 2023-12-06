@@ -1,0 +1,221 @@
+{
+    "tests": [
+        {
+            "score": 4.5,
+            "max_score": 4.5,
+            "name": "test_vector.py::test_1_push_back[vector-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.5,
+            "max_score": 4.5,
+            "name": "test_vector.py::test_1_push_back[vector-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.5,
+            "max_score": 4.5,
+            "name": "test_vector.py::test_3_operator_brackets[vector-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[vector-1]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[vector-2]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[vector-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.25,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[vector-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.16,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-4]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.16,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-5]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.16,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-6]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.3973,
+            "max_score": 1.5,
+            "name": "test_vector.py::test_1_push_back[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output ---                                | --- Test 1 output ---                               \nE                                                                  |                                                     \nE             vector.push_back(wonder)                             | vector.push_back(wonder)                            \nE             vector.push_back(yak)                                | vector.push_back(yak)                               \nE             vector = wonder yak                                  | vector = wonder yak                                 \nE                                                                  |                                                     \nE             vector.push_back(bookshelf)                          | vector.push_back(bookshelf)                         \nE             vector.push_back(euphoria)                           | vector.push_back(euphoria)                          \nE             vector = wonder yak bookshelf euphoria               | vector = wonder yak bookshelf euphoria              \nE                                                                  |                                                     \nE             vector.push_back(optimism)                           | vector.push_back(optimism)                          \nE             vector.push_back(cozy)                               | vector.push_back(cozy)                              \nE             vector = wonder yak bookshelf euphoria optimism cozy | vector = wonder yak bookshelf euphoria optimism cozy\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.3977,
+            "max_score": 4.5,
+            "name": "test_vector.py::test_1_push_back[vector-3]",
+            "output": "\ngroup_name = 'vector-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'wonder yak bookshelf euphoria optimism cozy\\r' == 'wonder yak bookshelf euphoria optimism cozy'\nE             - wonder yak bookshelf euphoria optimism cozy\nE             + wonder yak bookshelf euphoria optimism cozy\r\nE             ?                                            +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.7,
+            "name": "test_vector.py::test_2_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 2 output ---\\n\\nvector.insert(5, 1) threw an out_of_range exception\\nvector.insert(7, 0)\\nvector.insert(6, 0)\\nvector.insert(4, 2)\\nvector = 6 7 4\\n\\nvector.insert(12, 1)\\nvector.insert(1, 3)\\nvector = 6 12 7 1 4\\n\\nvector.insert(7, 0)\\nvector.insert(5, 0)\\nvector.insert(19, 7)\\nvector.insert(5, 9) threw an out_of_range exception\\nvector = 5 7 6 12 7 1 4 19\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 2 output ---\\n\\nvector.insert(5, 1) threw an out_of_range exception\\nvector.insert(7, 0)\\nvector.insert(6, 0)\\nvector.insert(4, 2)\\nvector = 6 7 4\\n\\nvector.insert(12, 1)\\nvector.insert(1, 3)\\nvector = 6 12 7 1 4\\n\\nvector.insert(7, 0)\\nvector.insert(5, 0)\\nvector.insert(19, 7)\\nvector.insert(5, 9) threw an out_of_range exception\\nvector = 5 7 6 12 7 1 4 19\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.55,
+            "name": "test_vector.py::test_2_insert[exception-thrown-1]",
+            "output": "\ngroup_name = 'exception-thrown-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'threw an out_of_range exception'\nE             - threw an out_of_range exception\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.4,
+            "name": "test_vector.py::test_2_insert[vector-1]",
+            "output": "\ngroup_name = 'vector-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6 7 4'\nE             - 6 7 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.4,
+            "name": "test_vector.py::test_2_insert[vector-2]",
+            "output": "\ngroup_name = 'vector-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '6 12 7 1 4'\nE             - 6 12 7 1 4\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.55,
+            "name": "test_vector.py::test_2_insert[exception-thrown-2]",
+            "output": "\ngroup_name = 'exception-thrown-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == 'threw an out_of_range exception'\nE             - threw an out_of_range exception\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 3.4,
+            "name": "test_vector.py::test_2_insert[vector-3]",
+            "output": "\ngroup_name = 'vector-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '' == '5 7 6 12 7 1 4 19'\nE             - 5 7 6 12 7 1 4 19\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.4205,
+            "max_score": 1.5,
+            "name": "test_vector.py::test_3_operator_brackets[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 3 output ---                      | --- Test 3 output ---                     \nE                                                        |                                           \nE             vector[0] threw an out_of_range exception  | vector[0] threw an out_of_range exception \nE             vector.push_back(ice)                      | vector.push_back(ice)                     \nE             vector.push_back(eggplant)                 | vector.push_back(eggplant)                \nE             vector.push_back(guitar)                   | vector.push_back(guitar)                  \nE             vector.push_back(narwhal)                  | vector.push_back(narwhal)                 \nE             vector = ice eggplant guitar narwhal       | vector = ice eggplant guitar narwhal      \nE                                                        |                                           \nE             vector[0] <- jellyfish                     | vector[0] <- jellyfish                    \nE             vector[1] <- zucchini                      | vector[1] <- zucchini                     \nE             vector[2] <- peace                         | vector[2] <- peace                        \nE             vector[3] <- serenity                      | vector[3] <- serenity                     \nE             vector[4] threw an out_of_range exception  | vector[4] threw an out_of_range exception \nE             vector = jellyfish zucchini peace serenity | vector = jellyfish zucchini peace serenity\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.1797,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_3_operator_brackets[exception-thrown-1]",
+            "output": "\ngroup_name = 'exception-thrown-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'threw an out_of_range exception\\r' == 'threw an out_of_range exception'\nE             - threw an out_of_range exception\nE             + threw an out_of_range exception\r\nE             ?                                +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.1797,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_3_operator_brackets[exception-thrown-2]",
+            "output": "\ngroup_name = 'exception-thrown-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'threw an out_of_range exception\\r' == 'threw an out_of_range exception'\nE             - threw an out_of_range exception\nE             + threw an out_of_range exception\r\nE             ?                                +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 4.3676,
+            "max_score": 4.5,
+            "name": "test_vector.py::test_3_operator_brackets[vector-2]",
+            "output": "\ngroup_name = 'vector-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'jellyfish zucchini peace serenity\\r' == 'jellyfish zucchini peace serenity'\nE             - jellyfish zucchini peace serenity\nE             + jellyfish zucchini peace serenity\r\nE             ?                                  +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.372,
+            "max_score": 1.5,
+            "name": "test_vector.py::test_4_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 4 output ---                            | --- Test 4 output ---                           \nE                                                              |                                                 \nE             vector.remove(0) threw an out_of_range exception | vector.remove(0) threw an out_of_range exception\nE             vector.push_back(19)                             | vector.push_back(19)                            \nE             vector.push_back(1)                              | vector.push_back(1)                             \nE             vector.push_back(7)                              | vector.push_back(7)                             \nE             vector.push_back(12)                             | vector.push_back(12)                            \nE             vector.push_back(2)                              | vector.push_back(2)                             \nE             vector = 19 1 7 12 2                             | vector = 19 1 7 12 2                            \nE                                                              |                                                 \nE             vector.remove(0)                                 | vector.remove(0)                                \nE             vector = 1 7 12 2                                | vector = 1 7 12 2                               \nE                                                              |                                                 \nE             vector.remove(3)                                 | vector.remove(3)                                \nE             vector = 1 7 12                                  | vector = 1 7 12                                 \nE                                                              |                                                 \nE             vector.remove(1)                                 | vector.remove(1)                                \nE             vector = 1 12                                    | vector = 1 12                                   \nE                                                              |                                                 \nE             vector.remove(0)                                 | vector.remove(0)                                \nE             vector.remove(0)                                 | vector.remove(0)                                \nE             vector =                                         | vector =\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.1797,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[exception-thrown]",
+            "output": "\ngroup_name = 'exception-thrown'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'threw an out_of_range exception\\r' == 'threw an out_of_range exception'\nE             - threw an out_of_range exception\nE             + threw an out_of_range exception\r\nE             ?                                +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.0,
+            "max_score": 2.25,
+            "name": "test_vector.py::test_4_remove[empty-vector]",
+            "output": "\ngroup_name = 'empty-vector'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'vector =\\r' == 'vector ='\nE             - vector =\nE             + vector =\r\nE             ?         +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.7038,
+            "max_score": 2.88,
+            "name": "test_vector.py::test_5_size_and_clear[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 5 output --- | --- Test 5 output ---\nE                                   |                      \nE             vector.size() = 0     | vector.size() = 0    \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.size() = 1     | vector.size() = 1    \nE             vector.insert(0, 0)   | vector.insert(0, 0)  \nE             vector.size() = 2     | vector.size() = 2    \nE             vector.remove(0)      | vector.remove(0)     \nE             vector.size() = 1     | vector.size() = 1    \nE                                   |                      \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.size() = 5     | vector.size() = 5    \nE                                   |                      \nE             vector.clear()        | vector.clear()       \nE             vector.size() = 0     | vector.size() = 0    \nE                                   |                      \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.push_back(0)   | vector.push_back(0)  \nE             vector.size() = 3     | vector.size() = 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.08,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-1]",
+            "output": "\ngroup_name = 'size-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '0\\r' == '0'\nE             - 0\nE             + 0\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.08,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-2]",
+            "output": "\ngroup_name = 'size-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '1\\r' == '1'\nE             - 1\nE             + 1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.08,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-3]",
+            "output": "\ngroup_name = 'size-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '2\\r' == '2'\nE             - 2\nE             + 2\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.08,
+            "max_score": 2.16,
+            "name": "test_vector.py::test_5_size_and_clear[size-7]",
+            "output": "\ngroup_name = 'size-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '3\\r' == '3'\nE             - 3\nE             + 3\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 20.0,
+            "name": "test_vector.py::test_6_growing[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '                                                                                ' == '--- Test 6 output ---\\n\\nvector.push_back(0...499)\\nassert vector[i] = i for all i 0...499\\n\\nvector.insert(500...999, 0)\\nassert vector[i] = 999 - i for all i 0...499\\n'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '--- Test 6 output ---\\n\\nvector.push_back(0...499)\\nassert vector[i] = i for all i 0...499\\n\\nvector.insert(500...999, 0)\\nassert vector[i] = 999 - i for all i 0...499\\n'\nE             + '                                                                                '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}

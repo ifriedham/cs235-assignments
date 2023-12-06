@@ -1,0 +1,312 @@
+{
+    "tests": [
+        {
+            "score": 2.4286,
+            "max_score": 2.5,
+            "name": "test_bst_find.py::test_1_empty_tree[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output ---  | --- Test 1 output --- \nE                                    |                       \nE             Empty tree             | Empty tree            \nE                                    |                       \nE             find(root, 1) = false  | find(root, 1) = false \nE             find(root, 2) = false  | find(root, 2) = false \nE             find(root, 3) = false  | find(root, 3) = false \nE             find(root, 4) = false  | find(root, 4) = false \nE             find(root, 5) = false  | find(root, 5) = false \nE             find(root, 6) = false  | find(root, 6) = false \nE             find(root, 7) = false  | find(root, 7) = false \nE             find(root, 8) = false  | find(root, 8) = false \nE             find(root, 9) = false  | find(root, 9) = false \nE             find(root, 10) = false | find(root, 10) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-1]",
+            "output": "\ngroup_name = 'find-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-2]",
+            "output": "\ngroup_name = 'find-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-3]",
+            "output": "\ngroup_name = 'find-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-4]",
+            "output": "\ngroup_name = 'find-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-5]",
+            "output": "\ngroup_name = 'find-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-6]",
+            "output": "\ngroup_name = 'find-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-7]",
+            "output": "\ngroup_name = 'find-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-8]",
+            "output": "\ngroup_name = 'find-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-9]",
+            "output": "\ngroup_name = 'find-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_1_empty_tree[find-10]",
+            "output": "\ngroup_name = 'find-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.379,
+            "max_score": 2.5,
+            "name": "test_bst_find.py::test_2_line_going_right[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 2 output ---          | --- Test 2 output ---         \nE                                            |                               \nE                            2               |                2              \nE                                            |                               \nE                                    3       |                        3      \nE                                            |                               \nE                                        6   |                            6  \nE                                            |                               \nE                                          8 |                              8\nE                                            |                               \nE             find(root, 1) = false          | find(root, 1) = false         \nE             find(root, 2) = true           | find(root, 2) = true          \nE             find(root, 3) = true           | find(root, 3) = true          \nE             find(root, 4) = false          | find(root, 4) = false         \nE             find(root, 5) = false          | find(root, 5) = false         \nE             find(root, 6) = true           | find(root, 6) = true          \nE             find(root, 7) = false          | find(root, 7) = false         \nE             find(root, 8) = true           | find(root, 8) = true          \nE             find(root, 9) = false          | find(root, 9) = false         \nE             find(root, 10) = false         | find(root, 10) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-1]",
+            "output": "\ngroup_name = 'find-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-2]",
+            "output": "\ngroup_name = 'find-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-3]",
+            "output": "\ngroup_name = 'find-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-4]",
+            "output": "\ngroup_name = 'find-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-5]",
+            "output": "\ngroup_name = 'find-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-6]",
+            "output": "\ngroup_name = 'find-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-7]",
+            "output": "\ngroup_name = 'find-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-8]",
+            "output": "\ngroup_name = 'find-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-9]",
+            "output": "\ngroup_name = 'find-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_2_line_going_right[find-10]",
+            "output": "\ngroup_name = 'find-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.379,
+            "max_score": 2.5,
+            "name": "test_bst_find.py::test_3_line_going_left[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 3 output ---          | --- Test 3 output ---         \nE                                            |                               \nE                           10               |               10              \nE                                            |                               \nE                    7                       |        7                      \nE                                            |                               \nE                6                           |    6                          \nE                                            |                               \nE              2                             |  2                            \nE                                            |                               \nE             find(root, 1) = false          | find(root, 1) = false         \nE             find(root, 2) = true           | find(root, 2) = true          \nE             find(root, 3) = false          | find(root, 3) = false         \nE             find(root, 4) = false          | find(root, 4) = false         \nE             find(root, 5) = false          | find(root, 5) = false         \nE             find(root, 6) = true           | find(root, 6) = true          \nE             find(root, 7) = true           | find(root, 7) = true          \nE             find(root, 8) = false          | find(root, 8) = false         \nE             find(root, 9) = false          | find(root, 9) = false         \nE             find(root, 10) = true          | find(root, 10) = true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-1]",
+            "output": "\ngroup_name = 'find-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-2]",
+            "output": "\ngroup_name = 'find-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-3]",
+            "output": "\ngroup_name = 'find-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-4]",
+            "output": "\ngroup_name = 'find-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-5]",
+            "output": "\ngroup_name = 'find-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-6]",
+            "output": "\ngroup_name = 'find-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-7]",
+            "output": "\ngroup_name = 'find-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-8]",
+            "output": "\ngroup_name = 'find-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-9]",
+            "output": "\ngroup_name = 'find-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_3_line_going_left[find-10]",
+            "output": "\ngroup_name = 'find-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.376,
+            "max_score": 2.5,
+            "name": "test_bst_find.py::test_4_balanced_tree[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 4 output ---  | --- Test 4 output --- \nE                                    |                       \nE                    5               |        5              \nE                                    |                       \nE                3       8           |    3       8          \nE                                    |                       \nE              2       6   9         |  2       6   9        \nE                                    |                       \nE             find(root, 1) = false  | find(root, 1) = false \nE             find(root, 2) = true   | find(root, 2) = true  \nE             find(root, 3) = true   | find(root, 3) = true  \nE             find(root, 4) = false  | find(root, 4) = false \nE             find(root, 5) = true   | find(root, 5) = true  \nE             find(root, 6) = true   | find(root, 6) = true  \nE             find(root, 7) = false  | find(root, 7) = false \nE             find(root, 8) = true   | find(root, 8) = true  \nE             find(root, 9) = true   | find(root, 9) = true  \nE             find(root, 10) = false | find(root, 10) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-1]",
+            "output": "\ngroup_name = 'find-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-2]",
+            "output": "\ngroup_name = 'find-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-3]",
+            "output": "\ngroup_name = 'find-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-4]",
+            "output": "\ngroup_name = 'find-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-5]",
+            "output": "\ngroup_name = 'find-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-6]",
+            "output": "\ngroup_name = 'find-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-7]",
+            "output": "\ngroup_name = 'find-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-8]",
+            "output": "\ngroup_name = 'find-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.8,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-9]",
+            "output": "\ngroup_name = 'find-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.875,
+            "max_score": 2.25,
+            "name": "test_bst_find.py::test_4_balanced_tree[find-10]",
+            "output": "\ngroup_name = 'find-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}

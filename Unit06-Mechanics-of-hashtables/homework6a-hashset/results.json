@@ -1,0 +1,333 @@
+{
+    "tests": [
+        {
+            "score": 1.6,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-5]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.0,
+            "max_score": 2.0,
+            "name": "test_hashset.py::test3_remove[remove-3]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-5]",
+            "output": "\n",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.7761,
+            "max_score": 0.8,
+            "name": "test_hashset.py::test1_insert[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 1 output --- | --- Test 1 output ---\nE                                   |                      \nE             set.insert(1) = true  | set.insert(1) = true \nE             set.insert(2) = true  | set.insert(2) = true \nE             set.insert(3) = true  | set.insert(3) = true \nE             set.insert(4) = true  | set.insert(4) = true \nE             set.insert(5) = true  | set.insert(5) = true \nE                                   |                      \nE             set.insert(1) = true  | set.insert(1) = false\nE             set.insert(2) = true  | set.insert(2) = false\nE             set.insert(3) = true  | set.insert(3) = false\nE             set.insert(4) = true  | set.insert(4) = false\nE             set.insert(5) = true  | set.insert(5) = false\nE                                   |                      \nE             set.insert(6) = true  | set.insert(6) = true \nE             set.insert(6) = true  | set.insert(6) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.28,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-1]",
+            "output": "\ngroup_name = 'insert-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.28,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-2]",
+            "output": "\ngroup_name = 'insert-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.28,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-3]",
+            "output": "\ngroup_name = 'insert-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.28,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-4]",
+            "output": "\ngroup_name = 'insert-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-6]",
+            "output": "\ngroup_name = 'insert-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-7]",
+            "output": "\ngroup_name = 'insert-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-8]",
+            "output": "\ngroup_name = 'insert-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-9]",
+            "output": "\ngroup_name = 'insert-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-10]",
+            "output": "\ngroup_name = 'insert-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.28,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-11]",
+            "output": "\ngroup_name = 'insert-11'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'true'\nE             - true\nE             + true\r\nE             ?     +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.6,
+            "name": "test_hashset.py::test1_insert[insert-12]",
+            "output": "\ngroup_name = 'insert-12'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'true\\r' == 'false'\nE             - false\nE             + true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.9373,
+            "max_score": 2.0,
+            "name": "test_hashset.py::test2_contains[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 2 output ---    | --- Test 2 output ---  \nE                                      |                        \nE             set.insert(2) = true     | set.insert(2) = true   \nE             set.insert(3) = true     | set.insert(3) = true   \nE             set.insert(4) = true     | set.insert(4) = true   \nE             set.insert(6) = true     | set.insert(6) = true   \nE             set.insert(7) = true     | set.insert(7) = true   \nE             set.insert(10) = true    | set.insert(10) = true  \nE                                      |                        \nE             set.contains(1) = false  | set.contains(1) = false\nE             set.contains(2) = false  | set.contains(2) = true \nE             set.contains(3) = false  | set.contains(3) = true \nE             set.contains(4) = false  | set.contains(4) = true \nE             set.contains(5) = false  | set.contains(5) = false\nE             set.contains(6) = false  | set.contains(6) = true \nE             set.contains(7) = false  | set.contains(7) = true \nE             set.contains(8) = false  | set.contains(8) = false\nE             set.contains(9) = false  | set.contains(9) = false\nE             set.contains(10) = false | set.contains(10) = true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.5,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-1]",
+            "output": "\ngroup_name = 'contains-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-2]",
+            "output": "\ngroup_name = 'contains-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-3]",
+            "output": "\ngroup_name = 'contains-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-4]",
+            "output": "\ngroup_name = 'contains-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.5,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-5]",
+            "output": "\ngroup_name = 'contains-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-6]",
+            "output": "\ngroup_name = 'contains-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-7]",
+            "output": "\ngroup_name = 'contains-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.5,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-8]",
+            "output": "\ngroup_name = 'contains-8'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.5,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-9]",
+            "output": "\ngroup_name = 'contains-9'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.8,
+            "name": "test_hashset.py::test2_contains[contains-10]",
+            "output": "\ngroup_name = 'contains-10'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 1.9271,
+            "max_score": 2.0,
+            "name": "test_hashset.py::test3_remove[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 3 output ---           | --- Test 3 output ---         \nE                                             |                               \nE             set.insert(quilt) = true        | set.insert(quilt) = true      \nE             set.insert(pineapple) = true    | set.insert(pineapple) = true  \nE             set.insert(utopia) = true       | set.insert(utopia) = true     \nE             set.insert(unity) = true        | set.insert(unity) = true      \nE                                             |                               \nE             set.remove(quilt) = false       | set.remove(quilt) = true      \nE             set.remove(utopia) = false      | set.remove(utopia) = true     \nE             set.remove(seahorse) = false    | set.remove(seahorse) = false  \nE                                             |                               \nE             set.contains(quilt) = false     | set.contains(quilt) = false   \nE             set.contains(pineapple) = false | set.contains(pineapple) = true\nE             set.contains(utopia) = false    | set.contains(utopia) = false  \nE             set.contains(unity) = false     | set.contains(unity) = true    \nE             set.contains(seahorse) = false  | set.contains(seahorse) = false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.0,
+            "name": "test_hashset.py::test3_remove[remove-1]",
+            "output": "\ngroup_name = 'remove-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.0,
+            "name": "test_hashset.py::test3_remove[remove-2]",
+            "output": "\ngroup_name = 'remove-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.0,
+            "max_score": 2.4,
+            "name": "test_hashset.py::test3_remove[contains-1]",
+            "output": "\ngroup_name = 'contains-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.4,
+            "name": "test_hashset.py::test3_remove[contains-2]",
+            "output": "\ngroup_name = 'contains-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.0,
+            "max_score": 2.4,
+            "name": "test_hashset.py::test3_remove[contains-3]",
+            "output": "\ngroup_name = 'contains-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 2.4,
+            "name": "test_hashset.py::test3_remove[contains-4]",
+            "output": "\ngroup_name = 'contains-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'true'\nE             - true\nE             + false\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 2.0,
+            "max_score": 2.4,
+            "name": "test_hashset.py::test3_remove[contains-5]",
+            "output": "\ngroup_name = 'contains-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'false\\r' == 'false'\nE             - false\nE             + false\r\nE             ?      +\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.1676,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | --- Test 4 output ---         \nE             Traceback (most recent call last):                                                                                               |                               \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 389, in run_exec         | set.size() = 0                \nE                 self._exec_give_input(                                                                                                       |                               \nE               File \"C:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py\", line 343, in _exec_give_input | set.insert(laughter) = true   \nE                 raise Exception(                                                                                                             | set.insert(freedom) = true    \nE             Exception: the program is blocked, which probably means that it's expecting an input; however, there's no input to give          | set.insert(igloo) = true      \nE                                                                                                                                              | set.size() = 3                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.insert(laughter) = false  \nE                                                                                                                                              | set.insert(igloo) = false     \nE                                                                                                                                              | set.size() = 3                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.remove(freedom) = true    \nE                                                                                                                                              | set.remove(igloo) = true      \nE                                                                                                                                              | set.size() = 1                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.remove(igloo) = false     \nE                                                                                                                                              | set.size() = 1                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.clear()                   \nE                                                                                                                                              | set.size() = 0                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.insert(elephant) = true   \nE                                                                                                                                              | set.insert(violin) = true     \nE                                                                                                                                              | set.size() = 2                \nE                                                                                                                                              |                               \nE                                                                                                                                              | set.contains(laughter) = false\nE                                                                                                                                              | set.contains(freedom) = false \nE                                                                                                                                              | set.contains(igloo) = false   \nE                                                                                                                                              | set.contains(elephant) = true \nE                                                                                                                                              | set.contains(violin) = true\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-1]",
+            "output": "\ngroup_name = 'size-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'i' == '0'\nE             - 0\nE             + i\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-2]",
+            "output": "\ngroup_name = 'size-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '(' == '3'\nE             - 3\nE             + (\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-3]",
+            "output": "\ngroup_name = 'size-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '\\\\' == '3'\nE             - 3\nE             + \\\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-4]",
+            "output": "\ngroup_name = 'size-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert ' ' == '1'\nE             Strings contain only whitespace, escaping them using repr()\nE             - '1'\nE             + ' '\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-6]",
+            "output": "\ngroup_name = 'size-6'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert '1' == '0'\nE             - 0\nE             + 1\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 1.0,
+            "name": "test_hashset.py::test4_size_and_clear[size-7]",
+            "output": "\ngroup_name = 'size-7'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'r' == '2'\nE             - 2\nE             + r\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.4,
+            "name": "test_hashset.py::test4_size_and_clear[contains-1]",
+            "output": "\ngroup_name = 'contains-1'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'th' == 'false'\nE             - false\nE             + th\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.4,
+            "name": "test_hashset.py::test4_size_and_clear[contains-2]",
+            "output": "\ngroup_name = 'contains-2'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'ich p' == 'false'\nE             - false\nE             + ich p\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.0,
+            "max_score": 0.4,
+            "name": "test_hashset.py::test4_size_and_clear[contains-3]",
+            "output": "\ngroup_name = 'contains-3'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'at it' == 'false'\nE             - false\nE             + at it\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.1,
+            "max_score": 0.4,
+            "name": "test_hashset.py::test4_size_and_clear[contains-4]",
+            "output": "\ngroup_name = 'contains-4'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'weve' == 'true'\nE             - true\nE             + weve\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 0.1143,
+            "max_score": 0.4,
+            "name": "test_hashset.py::test4_size_and_clear[contains-5]",
+            "output": "\ngroup_name = 'contains-5'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           AssertionError: assert 'to give' == 'true'\nE             - true\nE             + to give\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        },
+        {
+            "score": 17.1724,
+            "max_score": 30.0,
+            "name": "test_hashset.py::test5_rehashing_stress_test[everything-else]",
+            "output": "\ngroup_name = 'everything-else'\n\n    def new_func(group_name):\n        group_stat = group_stats[group_name]\n        if not group_stat['passed']:\n>           assert group_stat['observed'] == group_stat['expected']\nE           assert Observed (left) == Expected (right)\nE             --- Test 5 output ---                                 | --- Test 5 output ---                   \nE                                                                   |                                         \nE             set.insert(0...999)                                   | set.insert(0...999)                     \nE             assert set.contains(i) for all i 0...999              | assert set.contains(i) for all i 0...999\nE                                                                   |                                         \nE             ERROR: set.contains(0) = false, but it should be true |\n\nC:\\Users\\noah1\\AppData\\Roaming\\Python\\Python311\\site-packages\\byu_pytest_utils\\dialog.py:31: AssertionError",
+            "visibility": "visible"
+        }
+    ]
+}
