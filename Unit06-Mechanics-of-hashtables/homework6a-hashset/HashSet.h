@@ -19,7 +19,7 @@ public:
 
     ~HashSet() {
         clear(); // (makes a new, empty set)
-        delete [] data; // fully deletes that new set
+        delete[] data; // fully deletes that new set
     }
 
     bool insert(T item) {
@@ -44,12 +44,12 @@ public:
     bool remove(T item) {
         // implement remove here
         // return true if item was removed, false if item wasn't in the set
-        if (contains(item)){ // item is in set
+        if (contains(item)) { // item is in set
             size_t hashcode = hash<T>{}(item);
             size_t index = hashcode % capacity;
 
-            list <T> & contents = data[index]; // all the stuff in the bucket
-            for (auto i = contents.begin(); i != contents.end(); i++){ // looks through the bucket
+            list <T> &contents = data[index]; // all the stuff in the bucket
+            for (auto i = contents.begin(); i != contents.end(); i++) { // looks through the bucket
                 if (*i == item) { // item found
                     contents.erase(i);
                     setSize--;
@@ -57,7 +57,7 @@ public:
                 }
             }
 
-        } else{ // item wasn't in set
+        } else { // item wasn't in set
             return false;
         }
     }
@@ -81,7 +81,7 @@ public:
     void clear() {
         // implement clear here
         // remove all elements from the set
-        delete [] data;
+        delete[] data;
 
         capacity = INITIAL_CAPACITY;
         data = new list<T>[INITIAL_CAPACITY]; // makes new empty set
