@@ -70,9 +70,9 @@ public:
 
         if (data[index].size() != 0) { // checks if list is empty
             for (auto entry: data[index]) { // looks for item
-                if (entry == item) return false; // item found, insert not needed
+                if (entry == item) return true; // item found!
             }
-            return true; //item found!
+            return false; //item not found :(
         } else { // list is empty
             return false;
         }
