@@ -20,12 +20,12 @@ int main(int argc, char* argv[]) {
 
     // choose an implementation of a set by uncommenting the appropriate line
     // below
-    std::set<int> set;
+    //std::set<int> set;
     // std::unordered_set<int> set;
-    // VectorSet<int> set;
-    // BST<int> set;
+     // VectorSet<int> set;
+    //BST<int> set;
     // AVL<int> set;
-    // HashSet<int> set;
+     HashSet<int> set;
 
     std::cout << "    N       " << "Time to insert" << std::endl;
     std::cout << "---------- ----------------" << std::endl;

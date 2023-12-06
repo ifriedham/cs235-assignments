@@ -82,12 +82,12 @@ can just consider the smaller sizes of N that completed and mark the bigger
 sizes that didn't finish as TSTT (too slow to test).
 
 | N | `std::set` | `std::unordered_set` | `VectorSet` | `BST` | `AVL` | `HashSet` |
-|------------|---|---|---|---|---|---|
-| 1,000      |   |   |   |   |   |   |
-| 10,000     |   |   |   |   |   |   |
-| 100,000    |   |   |   |   |   |   |
-| 1,000,000  |   |   |   |   |   |   |
-| 10,000,000 |   |   |   |   |   |   |
+|------------|------------|----------------------|-------------|-------|-------|-----------|
+| 1,000      | 0ms        | 0ms                  | 3ms         | 5     | 0     | 3         |
+| 10,000     | 7ms        | 7ms                  | 357         | 664   | 8     | 370       |
+| 100,000    | 85ms       | 842ms                | 35972ms     | F     | 96    | 11302     |
+| 1,000,000  | 1085ms     | 706ms                | TSTT        | F     | 1111  | TSTT      |
+| 10,000,000 | 10675ms    | 6272ms               | TSTT        | F     | 12026 | TSTT      |
 
 Additionally, you should go through this process (testing all set
 implementations and recording their runtimes in the table) twice: once for
