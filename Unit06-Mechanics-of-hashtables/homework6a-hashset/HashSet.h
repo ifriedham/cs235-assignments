@@ -18,7 +18,8 @@ public:
     }
 
     ~HashSet() {
-        //clear();
+        clear(); // (makes a new, empty set)
+        delete [] data; // fully deletes that new set
     }
 
     bool insert(T item) {
@@ -43,6 +44,11 @@ public:
     bool remove(T item) {
         // implement remove here
         // return true if item was removed, false if item wasn't in the set
+        if (contains(item)){ // item is in set
+
+        } else{ // item wasn't in set
+            return false;
+        }
     }
 
     bool contains(T item) const {
@@ -63,6 +69,11 @@ public:
     void clear() {
         // implement clear here
         // remove all elements from the set
+        delete [] data;
+
+        capacity = INITIAL_CAPACITY;
+        data = new list<T>[INITIAL_CAPACITY]; // makes new empty set
+        setSize = 0;
     }
 
     int size() const {
