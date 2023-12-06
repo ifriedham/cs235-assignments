@@ -45,6 +45,17 @@ public:
         // implement remove here
         // return true if item was removed, false if item wasn't in the set
         if (contains(item)){ // item is in set
+            size_t hashcode = hash<T>{}(item);
+            size_t index = hashcode % capacity;
+
+            list <T> & contents = data[index]; // all the stuff in the bucket
+            for (auto i = contents.begin(); i != contents.end(); i++){ // looks through the bucket
+                if (*i == item) { // item found
+                    contents.erase(i);
+                    setSize--;
+                    return true;
+                }
+            }
 
         } else{ // item wasn't in set
             return false;
@@ -56,6 +67,7 @@ public:
         // return true if item is in the set, false otherwise
         size_t hashcode = hash<T>{}(item);
         size_t index = hashcode % capacity;
+
         if (data[index].size() != 0) { // checks if list is empty
             for (auto entry: data[index]) { // looks for item
                 if (entry == item) return false; // item found, insert not needed
