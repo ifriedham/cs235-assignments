@@ -1,4 +1,5 @@
 #pragma once
+#include <iostream>
 
 template<class T>
 class AVL {
@@ -34,7 +35,13 @@ public:
     bool remove(T item) {
         // implement remove here
         // return true if item was removed, false if item wasn't in the tree
-        return remove(root, item);
+        if (remove(root, item)) {
+            nodeCount--;
+            return true;
+        } else {
+            return false;
+        }
+        //return remove(root, item);
     }
 
     bool contains(T item) const {
@@ -106,56 +113,43 @@ private:
     }
 
     bool remove(Node *&node, T item) {
-        if (node == nullptr) {
+        if (node == nullptr) { // node not found
             return false;
-        }
+        } else { // node found
+            if (item < node->value) {
+                bool changed = remove(node->left, item);
+                update_height(node);
+                rebalance(node);
+                return changed;
+                //return remove(node->left, item);
+            } else if (item > node->value) {
+                bool changed = remove(node->right, item);
+                update_height(node);
+                rebalance(node);
+                return changed;
+//                return remove(node->right, item);
+            } else { // node with value 'item' found
+                if (node->left == nullptr && node->right == nullptr) { // node is leaf
+                    delete node;
+                    node = nullptr;
+                    //nodeCount--;
+                    //std::cout << "leaf removed" << std:: endl;
+                    return true;
+                } else if (node->left == nullptr) { // node only has right child
+                    node = node->right;
+                } else if (node->right == nullptr) { // node only has left child
+                    node = node->left;
+                } else { // node has 2 children
+                    Node *iop = getIOP(node);
+                    node->value = iop->value;
+                    remove(node->left, iop->value);
+                }
 
-        bool changed = false;
-        bool isLeaf = false;
-        if (item < node->value) {
-            changed = remove(node->left, item);
-            if (isLeaf) {
                 update_height(node);
                 rebalance(node);
-                isLeaf = false;
+                //nodeCount--;
+                return true;
             }
-        } else if (item > node->value) {
-            changed = remove(node->right, item);
-            if (isLeaf) {
-                update_height(node);
-                rebalance(node);
-                isLeaf = false;
-            }
-        } else { // node with value 'item' found
-            if (node->left == nullptr && node->right == nullptr) { // node is leaf
-                delete node;
-                node = nullptr;
-                changed = true;
-                isLeaf = true;
-                //update_height(node);
-                //rebalance(node);
-            } else if (node->left == nullptr) { // node only has right child
-                node = node->right;
-                changed = true;
-                update_height(node);
-                rebalance(node);
-            } else if (node->right == nullptr) { // node only has left child
-                node = node->left;
-                changed = true;
-                update_height(node);
-                rebalance(node);
-            } else { // node has 2 children
-                Node *iop = getIOP(node);
-                node->value = iop->value;
-                update_height(node);
-                changed = remove(node->left, iop->value);
-                changed = true;
-                update_height(node);
-                rebalance(node);
-            }
-
-            nodeCount--;
-            return changed;
         }
     }
 
